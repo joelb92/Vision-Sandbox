@@ -12,7 +12,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+	cv::Mat thing = cv::Mat::ones(5, 5, CV_8UC1);
+	cv::imshow("thing", thing);
 }
 
 @end

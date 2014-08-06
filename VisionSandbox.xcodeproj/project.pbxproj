@@ -11,13 +11,14 @@
 		5D28979C1991E2300036CFD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D28979A1991E2300036CFD6 /* InfoPlist.strings */; };
 		5D28979E1991E2300036CFD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D28979D1991E2300036CFD6 /* main.m */; };
 		5D2897A21991E2300036CFD6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5D2897A01991E2300036CFD6 /* Credits.rtf */; };
-		5D2897A51991E2300036CFD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2897A41991E2300036CFD6 /* AppDelegate.m */; };
+		5D2897A51991E2300036CFD6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D2897A41991E2300036CFD6 /* AppDelegate.mm */; };
 		5D2897A81991E2300036CFD6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2897A61991E2300036CFD6 /* MainMenu.xib */; };
 		5D2897AA1991E2300036CFD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2897A91991E2300036CFD6 /* Images.xcassets */; };
 		5D2897B11991E2300036CFD6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2897B01991E2300036CFD6 /* XCTest.framework */; };
 		5D2897B21991E2300036CFD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2897911991E2300036CFD6 /* Cocoa.framework */; };
 		5D2897BA1991E2300036CFD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D2897B81991E2300036CFD6 /* InfoPlist.strings */; };
 		5D2897BC1991E2300036CFD6 /* VisionSandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2897BB1991E2300036CFD6 /* VisionSandboxTests.m */; };
+		5D2897C61991E3090036CFD6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2897C51991E3090036CFD6 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		5D28979F1991E2300036CFD6 /* VisionSandbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisionSandbox-Prefix.pch"; sourceTree = "<group>"; };
 		5D2897A11991E2300036CFD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		5D2897A31991E2300036CFD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5D2897A41991E2300036CFD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D2897A41991E2300036CFD6 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		5D2897A71991E2300036CFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5D2897A91991E2300036CFD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D2897AF1991E2300036CFD6 /* VisionSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +51,7 @@
 		5D2897B71991E2300036CFD6 /* VisionSandboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisionSandboxTests-Info.plist"; sourceTree = "<group>"; };
 		5D2897B91991E2300036CFD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D2897BB1991E2300036CFD6 /* VisionSandboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisionSandboxTests.m; sourceTree = "<group>"; };
+		5D2897C51991E3090036CFD6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../../Library/Frameworks/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2897C61991E3090036CFD6 /* opencv2.framework in Frameworks */,
 				5D2897921991E2300036CFD6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		5D2897901991E2300036CFD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D2897C51991E3090036CFD6 /* opencv2.framework */,
 				5D2897911991E2300036CFD6 /* Cocoa.framework */,
 				5D2897B01991E2300036CFD6 /* XCTest.framework */,
 				5D2897931991E2300036CFD6 /* Other Frameworks */,
@@ -116,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				5D2897A31991E2300036CFD6 /* AppDelegate.h */,
-				5D2897A41991E2300036CFD6 /* AppDelegate.m */,
+				5D2897A41991E2300036CFD6 /* AppDelegate.mm */,
 				5D2897A61991E2300036CFD6 /* MainMenu.xib */,
 				5D2897A91991E2300036CFD6 /* Images.xcassets */,
 				5D2897981991E2300036CFD6 /* Supporting Files */,
@@ -252,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D2897A51991E2300036CFD6 /* AppDelegate.m in Sources */,
+				5D2897A51991E2300036CFD6 /* AppDelegate.mm in Sources */,
 				5D28979E1991E2300036CFD6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,8 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -327,6 +331,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -352,8 +357,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -366,6 +371,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -382,12 +388,27 @@
 		5D2897C01991E2300036CFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisionSandbox/VisionSandbox-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "VisionSandbox/VisionSandbox-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				USER_HEADER_SEARCH_PATHS = /System/Library/Frameworks/ApplicationServices.framework/Headers;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,12 +416,27 @@
 		5D2897C11991E2300036CFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisionSandbox/VisionSandbox-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "VisionSandbox/VisionSandbox-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				USER_HEADER_SEARCH_PATHS = "/System/Library/Frameworks/ApplicationServices.framework/Headers $(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1) $(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
