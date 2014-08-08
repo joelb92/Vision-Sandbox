@@ -12,8 +12,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	cv::Mat thing = cv::Mat::ones(5, 5, CV_8UC1);
-	cv::imshow("thing", thing);
+	GLViewList*viewList = [[GLViewList alloc] initWithBackupPath:@"/Users/Shared/DIF Mapper/Settings/View List Settings/View List Backup.DIFmd"];
+	mainGLView.objectList = [[[GLObjectList alloc] initWithBackupPath:@"/Users/Shared/DIF Mapper/Settings/View List Settings/Main View List Backup.DIFmd"] autorelease];
+	[viewList AddObject:mainGLView ForKeyPath:@"MainView"];
+	mainGLOutlineView.viewList = viewList;
+
 }
 
 @end

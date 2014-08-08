@@ -8,8 +8,13 @@
 
 #include "opencv2/opencv.hpp"
 #import <Cocoa/Cocoa.h>
+#import "GLOutlineViewController.h"
+#import "GL2DView.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
+{
+	IBOutlet GLOutlineViewController *mainGLOutlineView;
+	IBOutlet GL2DView *mainGLView;
+}
 @property (assign) IBOutlet NSWindow *window;
 
 @end
