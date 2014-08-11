@@ -8,6 +8,7 @@
 
 #import "NSImage+saveAsJpegWithName.h"
 
+
 @implementation NSImage(saveAsJpegWithName)
 
 - (void)saveAsJpegWithName:(NSString*)fileName

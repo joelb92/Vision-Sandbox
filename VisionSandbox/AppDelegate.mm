@@ -20,6 +20,9 @@
 	OpenImageHandler * h = [[OpenImageHandler alloc] initWithCVMat:cv::Mat(400,400,CV_8UC3,cv::Scalar(0,255,0)) Color:White BinaryImage:false];
 	[GLViewListCommand AddObject:h ToViewKeyPath:@"MainView" ForKeyPath:@"TestThing"];
 	[mainGLOutlineView reloadData];
+	FunctionTreeItem *item = [[FunctionTreeItem alloc] initWithKey:@"Test" Object:nil];
+	[functionListController addItem:item toPath:@"/Test1/Test2/Test3"];
 }
+
 
 @end

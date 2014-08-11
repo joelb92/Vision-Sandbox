@@ -10,10 +10,12 @@
 #import <Cocoa/Cocoa.h>
 #import "GLOutlineViewController.h"
 #import "GL2DView.h"
+#import "FunctionTreeViewController.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
 	IBOutlet GLOutlineViewController *mainGLOutlineView;
 	IBOutlet GL2DView *mainGLView;
+	IBOutlet FunctionTreeViewController *functionListController;
 }
 @property (assign) IBOutlet NSWindow *window;
 

@@ -80,6 +80,13 @@
 		5D55C5631994556D00D9F78A /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C56619948EFC00D9F78A /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D55C56419948EFB00D9F78A /* FolderIcon.png */; };
 		5D55C56719948EFC00D9F78A /* OpenGL View Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D55C56519948EFC00D9F78A /* OpenGL View Icon.png */; };
+		5D55C5771995D1AE00D9F78A /* ImageListView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5761995D1AE00D9F78A /* ImageListView.mm */; };
+		5D55C57A1995F04200D9F78A /* FunctionVisualTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.m */; };
+		5D55C57D1995F29C00D9F78A /* Function.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C57C1995F29C00D9F78A /* Function.mm */; };
+		5D55C5811995F36700D9F78A /* FunctionVisualParametersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5801995F36700D9F78A /* FunctionVisualParametersView.m */; };
+		5D55C5841995F57700D9F78A /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5831995F57700D9F78A /* Timer.m */; };
+		5D55C58819972FDB00D9F78A /* Threshold.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C58719972FDB00D9F78A /* Threshold.mm */; };
+		5DD4C75D199740990066DFE1 /* FunctionTreeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C75C199740990066DFE1 /* FunctionTreeViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,8 +160,8 @@
 		5D28985B1991FF8E0036CFD6 /* GLViewMouseOverController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLViewMouseOverController.mm; sourceTree = "<group>"; };
 		5D28985C1991FF8E0036CFD6 /* GLViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewTool.h; sourceTree = "<group>"; };
 		5D28985D1991FF8E0036CFD6 /* GLViewTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLViewTool.mm; sourceTree = "<group>"; };
-		5D2898631991FFCA0036CFD6 /* DragableSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableSubView.h; sourceTree = "<group>"; };
-		5D2898641991FFCA0036CFD6 /* DragableSubView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DragableSubView.mm; sourceTree = "<group>"; };
+		5D2898631991FFCA0036CFD6 /* DragableSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DragableSubView.h; path = VisionSandbox/DragableSubView.h; sourceTree = "<group>"; };
+		5D2898641991FFCA0036CFD6 /* DragableSubView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DragableSubView.mm; path = VisionSandbox/DragableSubView.mm; sourceTree = "<group>"; };
 		5D2898671992022E0036CFD6 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
 		5D2898681992022E0036CFD6 /* Vector2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Vector2.mm; sourceTree = "<group>"; };
 		5D2898691992022E0036CFD6 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
@@ -211,23 +218,37 @@
 		5D55C53019933F8800D9F78A /* SingleViewCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewCellView.m; sourceTree = "<group>"; };
 		5D55C53219933FAD00D9F78A /* SpaceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceConverter.h; sourceTree = "<group>"; };
 		5D55C53319933FAD00D9F78A /* SpaceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpaceConverter.mm; sourceTree = "<group>"; };
-		5D55C53519933FCD00D9F78A /* ReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWriteLock.h; sourceTree = "<group>"; };
-		5D55C53619933FCD00D9F78A /* ReadWriteLock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ReadWriteLock.mm; sourceTree = "<group>"; };
-		5D55C538199340DA00D9F78A /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
-		5D55C539199340DA00D9F78A /* Color.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Color.mm; sourceTree = "<group>"; };
+		5D55C53519933FCD00D9F78A /* ReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadWriteLock.h; path = ../ReadWriteLock.h; sourceTree = "<group>"; };
+		5D55C53619933FCD00D9F78A /* ReadWriteLock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ReadWriteLock.mm; path = ../ReadWriteLock.mm; sourceTree = "<group>"; };
+		5D55C538199340DA00D9F78A /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Color.h; path = ../Color.h; sourceTree = "<group>"; };
+		5D55C539199340DA00D9F78A /* Color.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Color.mm; path = ../Color.mm; sourceTree = "<group>"; };
 		5D55C5531994504E00D9F78A /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "../../../../../opt/local/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
-		5D55C555199453B900D9F78A /* OpenImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenImageHandler.h; sourceTree = "<group>"; };
-		5D55C556199453B900D9F78A /* OpenImageHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenImageHandler.mm; sourceTree = "<group>"; };
-		5D55C5581994543D00D9F78A /* OpenContourHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenContourHandler.h; sourceTree = "<group>"; };
-		5D55C5591994543D00D9F78A /* OpenContourHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenContourHandler.mm; sourceTree = "<group>"; };
-		5D55C55B1994548900D9F78A /* ImageThresholdMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageThresholdMask.h; sourceTree = "<group>"; };
-		5D55C55C1994548900D9F78A /* ImageThresholdMask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageThresholdMask.mm; sourceTree = "<group>"; };
+		5D55C555199453B900D9F78A /* OpenImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenImageHandler.h; path = ../OpenImageHandler.h; sourceTree = "<group>"; };
+		5D55C556199453B900D9F78A /* OpenImageHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenImageHandler.mm; path = ../OpenImageHandler.mm; sourceTree = "<group>"; };
+		5D55C5581994543D00D9F78A /* OpenContourHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenContourHandler.h; path = ../OpenContourHandler.h; sourceTree = "<group>"; };
+		5D55C5591994543D00D9F78A /* OpenContourHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenContourHandler.mm; path = ../OpenContourHandler.mm; sourceTree = "<group>"; };
+		5D55C55B1994548900D9F78A /* ImageThresholdMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageThresholdMask.h; path = ../ImageThresholdMask.h; sourceTree = "<group>"; };
+		5D55C55C1994548900D9F78A /* ImageThresholdMask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ImageThresholdMask.mm; path = ../ImageThresholdMask.mm; sourceTree = "<group>"; };
 		5D55C55E1994556D00D9F78A /* NSImage+saveAsJpegWithName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+saveAsJpegWithName.h"; sourceTree = "<group>"; };
 		5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+saveAsJpegWithName.m"; sourceTree = "<group>"; };
 		5D55C5601994556D00D9F78A /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = "<group>"; };
 		5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = "<group>"; };
-		5D55C56419948EFB00D9F78A /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
-		5D55C56519948EFC00D9F78A /* OpenGL View Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OpenGL View Icon.png"; sourceTree = "<group>"; };
+		5D55C56419948EFB00D9F78A /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FolderIcon.png; path = ../FolderIcon.png; sourceTree = "<group>"; };
+		5D55C56519948EFC00D9F78A /* OpenGL View Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OpenGL View Icon.png"; path = "../OpenGL View Icon.png"; sourceTree = "<group>"; };
+		5D55C5751995D1AE00D9F78A /* ImageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListView.h; sourceTree = "<group>"; };
+		5D55C5761995D1AE00D9F78A /* ImageListView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageListView.mm; sourceTree = "<group>"; };
+		5D55C5781995F04200D9F78A /* FunctionVisualTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionVisualTableCellView.h; sourceTree = "<group>"; };
+		5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionVisualTableCellView.m; sourceTree = "<group>"; };
+		5D55C57B1995F29C00D9F78A /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Function.h; path = ../Function.h; sourceTree = "<group>"; };
+		5D55C57C1995F29C00D9F78A /* Function.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Function.mm; path = ../Function.mm; sourceTree = "<group>"; };
+		5D55C57F1995F36700D9F78A /* FunctionVisualParametersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionVisualParametersView.h; sourceTree = "<group>"; };
+		5D55C5801995F36700D9F78A /* FunctionVisualParametersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionVisualParametersView.m; sourceTree = "<group>"; };
+		5D55C5821995F57700D9F78A /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = ../Timer.h; sourceTree = "<group>"; };
+		5D55C5831995F57700D9F78A /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = ../Timer.m; sourceTree = "<group>"; };
+		5D55C58619972FDB00D9F78A /* Threshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Threshold.h; sourceTree = "<group>"; };
+		5D55C58719972FDB00D9F78A /* Threshold.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Threshold.mm; sourceTree = "<group>"; };
+		5DD4C75B199740990066DFE1 /* FunctionTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionTreeViewController.h; sourceTree = "<group>"; };
+		5DD4C75C199740990066DFE1 /* FunctionTreeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionTreeViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,30 +281,14 @@
 		5D2897851991E2300036CFD6 = {
 			isa = PBXGroup;
 			children = (
-				5D55C53519933FCD00D9F78A /* ReadWriteLock.h */,
-				5D55C53619933FCD00D9F78A /* ReadWriteLock.mm */,
-				5D55C52F19933F8800D9F78A /* SingleViewCellView.h */,
-				5D55C53019933F8800D9F78A /* SingleViewCellView.m */,
-				5D55C538199340DA00D9F78A /* Color.h */,
-				5D55C539199340DA00D9F78A /* Color.mm */,
-				5D55C555199453B900D9F78A /* OpenImageHandler.h */,
-				5D55C556199453B900D9F78A /* OpenImageHandler.mm */,
-				5D55C5581994543D00D9F78A /* OpenContourHandler.h */,
-				5D55C5591994543D00D9F78A /* OpenContourHandler.mm */,
-				5D55C55B1994548900D9F78A /* ImageThresholdMask.h */,
-				5D55C55C1994548900D9F78A /* ImageThresholdMask.mm */,
-				5D55C55E1994556D00D9F78A /* NSImage+saveAsJpegWithName.h */,
-				5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.m */,
-				5D55C5601994556D00D9F78A /* NSImage+OpenCV.h */,
-				5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */,
-				5D28988B199202620036CFD6 /* Array Types */,
-				5D2898661992020C0036CFD6 /* Algebra */,
+				5DD4C75B199740990066DFE1 /* FunctionTreeViewController.h */,
+				5DD4C75C199740990066DFE1 /* FunctionTreeViewController.mm */,
+				5D55C5751995D1AE00D9F78A /* ImageListView.h */,
+				5D55C5761995D1AE00D9F78A /* ImageListView.mm */,
 				5D2897971991E2300036CFD6 /* VisionSandbox */,
 				5D2897B51991E2300036CFD6 /* VisionSandboxTests */,
 				5D2897901991E2300036CFD6 /* Frameworks */,
 				5D28978F1991E2300036CFD6 /* Products */,
-				5D55C56419948EFB00D9F78A /* FolderIcon.png */,
-				5D55C56519948EFC00D9F78A /* OpenGL View Icon.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -325,14 +330,15 @@
 		5D2897971991E2300036CFD6 /* VisionSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				5D2898631991FFCA0036CFD6 /* DragableSubView.h */,
-				5D2898641991FFCA0036CFD6 /* DragableSubView.mm */,
-				5D2898271991FA890036CFD6 /* OpenGL */,
 				5D2897A31991E2300036CFD6 /* AppDelegate.h */,
 				5D2897A41991E2300036CFD6 /* AppDelegate.mm */,
-				5D2897A61991E2300036CFD6 /* MainMenu.xib */,
-				5D2897C71991F06E0036CFD6 /* Camera.h */,
-				5D2897C81991F06E0036CFD6 /* Camera.mm */,
+				5D2898661992020C0036CFD6 /* Algebra */,
+				5D28988B199202620036CFD6 /* Array Types */,
+				5D55C5701995BFFB00D9F78A /* Categories */,
+				5D55C57E1995F2BA00D9F78A /* Functions for Algorithms */,
+				5D55C5721995C4DC00D9F78A /* GUI */,
+				5D2898271991FA890036CFD6 /* OpenGL */,
+				5D55C5731995C4FE00D9F78A /* Image Input */,
 				5D2897A91991E2300036CFD6 /* Images.xcassets */,
 				5D2897981991E2300036CFD6 /* Supporting Files */,
 			);
@@ -372,34 +378,9 @@
 		5D2898271991FA890036CFD6 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				5D55C53219933FAD00D9F78A /* SpaceConverter.h */,
-				5D55C53319933FAD00D9F78A /* SpaceConverter.mm */,
 				5D28984F1991FEED0036CFD6 /* GLUtilities */,
 				5D2898531991FF8E0036CFD6 /* MouseOver */,
-				5D28982A1991FA890036CFD6 /* GL2DView.h */,
-				5D28982B1991FA890036CFD6 /* GL2DView.mm */,
-				5D28982C1991FA890036CFD6 /* GL3DGeometryDrawer.h */,
-				5D28982D1991FA890036CFD6 /* GL3DGeometryDrawer.mm */,
-				5D28982E1991FA890036CFD6 /* GL3DView.h */,
-				5D28982F1991FA890036CFD6 /* GL3DView.mm */,
-				5D2898301991FA890036CFD6 /* GLObject.h */,
-				5D2898311991FA890036CFD6 /* GLObject.mm */,
-				5D2898321991FA890036CFD6 /* GLObjectData.h */,
-				5D2898331991FA890036CFD6 /* GLObjectData.mm */,
-				5D2898341991FA890036CFD6 /* GLObjectList.h */,
-				5D2898351991FA890036CFD6 /* GLObjectList.mm */,
-				5D2898361991FA890036CFD6 /* GLOutlineViewController.h */,
-				5D2898371991FA890036CFD6 /* GLOutlineViewController.mm */,
-				5D2898381991FA890036CFD6 /* GLView.h */,
-				5D2898391991FA890036CFD6 /* GLView.mm */,
-				5D28983A1991FA890036CFD6 /* GLViewList.h */,
-				5D28983B1991FA890036CFD6 /* GLViewList.mm */,
-				5D28983C1991FA890036CFD6 /* GLViewListCommand.h */,
-				5D28983D1991FA890036CFD6 /* GLViewListCommand.mm */,
-				5D28983E1991FA890036CFD6 /* TreeList.h */,
-				5D28983F1991FA890036CFD6 /* TreeList.mm */,
-				5D2898401991FA890036CFD6 /* TreeListItem.h */,
-				5D2898411991FA890036CFD6 /* TreeListItem.mm */,
+				5D55C5711995C2EF00D9F78A /* GL View */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -431,6 +412,8 @@
 		5D2898661992020C0036CFD6 /* Algebra */ = {
 			isa = PBXGroup;
 			children = (
+				5D55C538199340DA00D9F78A /* Color.h */,
+				5D55C539199340DA00D9F78A /* Color.mm */,
 				5D2898671992022E0036CFD6 /* Vector2.h */,
 				5D2898681992022E0036CFD6 /* Vector2.mm */,
 				5D2898691992022E0036CFD6 /* Vector3.h */,
@@ -455,12 +438,13 @@
 				5D28987C1992022E0036CFD6 /* AvVector2.mm */,
 			);
 			name = Algebra;
-			path = VisionSandbox;
 			sourceTree = "<group>";
 		};
 		5D28988B199202620036CFD6 /* Array Types */ = {
 			isa = PBXGroup;
 			children = (
+				5D55C53519933FCD00D9F78A /* ReadWriteLock.h */,
+				5D55C53619933FCD00D9F78A /* ReadWriteLock.mm */,
 				5D28988C199202710036CFD6 /* Vector2Arr.h */,
 				5D28988D199202710036CFD6 /* Vector2Arr.mm */,
 				5D28988E199202710036CFD6 /* LineSegment2Arr.h */,
@@ -493,7 +477,122 @@
 				5D2898B3199202710036CFD6 /* CvSeqArr.mm */,
 			);
 			name = "Array Types";
-			path = VisionSandbox;
+			sourceTree = "<group>";
+		};
+		5D55C56F1995BFCF00D9F78A /* View Sublcasses */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C57F1995F36700D9F78A /* FunctionVisualParametersView.h */,
+				5D55C5801995F36700D9F78A /* FunctionVisualParametersView.m */,
+				5D2898631991FFCA0036CFD6 /* DragableSubView.h */,
+				5D2898641991FFCA0036CFD6 /* DragableSubView.mm */,
+				5D55C52F19933F8800D9F78A /* SingleViewCellView.h */,
+				5D55C53019933F8800D9F78A /* SingleViewCellView.m */,
+				5D55C5781995F04200D9F78A /* FunctionVisualTableCellView.h */,
+				5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.m */,
+			);
+			name = "View Sublcasses";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5D55C5701995BFFB00D9F78A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C55E1994556D00D9F78A /* NSImage+saveAsJpegWithName.h */,
+				5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.m */,
+				5D55C5601994556D00D9F78A /* NSImage+OpenCV.h */,
+				5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */,
+			);
+			name = Categories;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5D55C5711995C2EF00D9F78A /* GL View */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C53219933FAD00D9F78A /* SpaceConverter.h */,
+				5D55C53319933FAD00D9F78A /* SpaceConverter.mm */,
+				5D28983E1991FA890036CFD6 /* TreeList.h */,
+				5D28983F1991FA890036CFD6 /* TreeList.mm */,
+				5D2898401991FA890036CFD6 /* TreeListItem.h */,
+				5D2898411991FA890036CFD6 /* TreeListItem.mm */,
+				5D28982A1991FA890036CFD6 /* GL2DView.h */,
+				5D28982B1991FA890036CFD6 /* GL2DView.mm */,
+				5D28982C1991FA890036CFD6 /* GL3DGeometryDrawer.h */,
+				5D28982D1991FA890036CFD6 /* GL3DGeometryDrawer.mm */,
+				5D28982E1991FA890036CFD6 /* GL3DView.h */,
+				5D28982F1991FA890036CFD6 /* GL3DView.mm */,
+				5D2898301991FA890036CFD6 /* GLObject.h */,
+				5D2898311991FA890036CFD6 /* GLObject.mm */,
+				5D2898321991FA890036CFD6 /* GLObjectData.h */,
+				5D2898331991FA890036CFD6 /* GLObjectData.mm */,
+				5D2898341991FA890036CFD6 /* GLObjectList.h */,
+				5D2898351991FA890036CFD6 /* GLObjectList.mm */,
+				5D2898361991FA890036CFD6 /* GLOutlineViewController.h */,
+				5D2898371991FA890036CFD6 /* GLOutlineViewController.mm */,
+				5D2898381991FA890036CFD6 /* GLView.h */,
+				5D2898391991FA890036CFD6 /* GLView.mm */,
+				5D28983A1991FA890036CFD6 /* GLViewList.h */,
+				5D28983B1991FA890036CFD6 /* GLViewList.mm */,
+				5D28983C1991FA890036CFD6 /* GLViewListCommand.h */,
+				5D28983D1991FA890036CFD6 /* GLViewListCommand.mm */,
+			);
+			name = "GL View";
+			sourceTree = "<group>";
+		};
+		5D55C5721995C4DC00D9F78A /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C5741995C63400D9F78A /* Images */,
+				5D55C56F1995BFCF00D9F78A /* View Sublcasses */,
+				5D2897A61991E2300036CFD6 /* MainMenu.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		5D55C5731995C4FE00D9F78A /* Image Input */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C555199453B900D9F78A /* OpenImageHandler.h */,
+				5D55C556199453B900D9F78A /* OpenImageHandler.mm */,
+				5D55C5581994543D00D9F78A /* OpenContourHandler.h */,
+				5D55C5591994543D00D9F78A /* OpenContourHandler.mm */,
+				5D55C55B1994548900D9F78A /* ImageThresholdMask.h */,
+				5D55C55C1994548900D9F78A /* ImageThresholdMask.mm */,
+				5D2897C71991F06E0036CFD6 /* Camera.h */,
+				5D2897C81991F06E0036CFD6 /* Camera.mm */,
+			);
+			name = "Image Input";
+			sourceTree = "<group>";
+		};
+		5D55C5741995C63400D9F78A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C56419948EFB00D9F78A /* FolderIcon.png */,
+				5D55C56519948EFC00D9F78A /* OpenGL View Icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5D55C57E1995F2BA00D9F78A /* Functions for Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				5D55C5821995F57700D9F78A /* Timer.h */,
+				5D55C5831995F57700D9F78A /* Timer.m */,
+				5D55C57B1995F29C00D9F78A /* Function.h */,
+				5D55C57C1995F29C00D9F78A /* Function.mm */,
+				5D55C58619972FDB00D9F78A /* Threshold.h */,
+				5D55C58719972FDB00D9F78A /* Threshold.mm */,
+				5D55C5851995F77300D9F78A /* OpenCV */,
+			);
+			name = "Functions for Algorithms";
+			sourceTree = "<group>";
+		};
+		5D55C5851995F77300D9F78A /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OpenCV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,6 +719,9 @@
 				5D2898BE199202710036CFD6 /* colorArr.mm in Sources */,
 				5D2898C7199202710036CFD6 /* CvSeqArr.mm in Sources */,
 				5D2898BB199202710036CFD6 /* boolArr.mm in Sources */,
+				5D55C5771995D1AE00D9F78A /* ImageListView.mm in Sources */,
+				5D55C58819972FDB00D9F78A /* Threshold.mm in Sources */,
+				5DD4C75D199740990066DFE1 /* FunctionTreeViewController.mm in Sources */,
 				5D2898B7199202710036CFD6 /* Vector3Arr.mm in Sources */,
 				5D2897A51991E2300036CFD6 /* AppDelegate.mm in Sources */,
 				5D55C55D1994548900D9F78A /* ImageThresholdMask.mm in Sources */,
@@ -635,14 +737,18 @@
 				5D28984C1991FA890036CFD6 /* GLViewListCommand.mm in Sources */,
 				5D2898881992022E0036CFD6 /* vector2Rect.mm in Sources */,
 				5D55C55A1994543D00D9F78A /* OpenContourHandler.mm in Sources */,
+				5D55C57D1995F29C00D9F78A /* Function.mm in Sources */,
 				5D2898C4199202710036CFD6 /* DisplayListArr.mm in Sources */,
 				5D2898B6199202710036CFD6 /* LineSegment3Arr.mm in Sources */,
 				5D2898861992022E0036CFD6 /* Line3.mm in Sources */,
+				5D55C57A1995F04200D9F78A /* FunctionVisualTableCellView.m in Sources */,
 				5D28984D1991FA890036CFD6 /* TreeList.mm in Sources */,
 				5D2898811992022E0036CFD6 /* Ray2.mm in Sources */,
 				5D2898BD199202710036CFD6 /* intArr.mm in Sources */,
+				5D55C5841995F57700D9F78A /* Timer.m in Sources */,
 				5D2898461991FA890036CFD6 /* GLObject.mm in Sources */,
 				5D2898471991FA890036CFD6 /* GLObjectData.mm in Sources */,
+				5D55C5811995F36700D9F78A /* FunctionVisualParametersView.m in Sources */,
 				5D2898B5199202710036CFD6 /* LineSegment2Arr.mm in Sources */,
 				5D2898C0199202710036CFD6 /* DirectionArray.mm in Sources */,
 				5D2898841992022E0036CFD6 /* LineSegment3.mm in Sources */,

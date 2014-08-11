@@ -30,6 +30,15 @@
 	[self setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
 	[self reloadData];
 }
+- (id)init
+{
+	self = [super init];
+	if (self)
+	{
+		viewList = nil;
+	}
+	return self;
+}
 
 - (id)initWithFrame:(NSRect)frame
 {
