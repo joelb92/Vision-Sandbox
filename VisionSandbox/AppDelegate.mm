@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -21,7 +20,9 @@
 	[GLViewListCommand AddObject:h ToViewKeyPath:@"MainView" ForKeyPath:@"TestThing"];
 	[mainGLOutlineView reloadData];
 	FunctionTreeItem *item = [[FunctionTreeItem alloc] initWithKey:@"Test" Object:nil];
-	[functionListController addItem:item toPath:@"/Test1/Test2/Test3"];
+//	[functionListController addItem:item toPath:@"/Test1/Test2/Test3"];
+	[[PluginManager sharedManager] addFunctionClassType:Function.class];
+	[functionListController addFunctions:[[PluginManager sharedManager] FunctionObjects]];
 }
 
 

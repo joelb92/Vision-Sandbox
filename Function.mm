@@ -9,7 +9,7 @@
 #import "Function.h"
 #import "OpenImageHandler.h"
 @implementation Function
-@synthesize parametersView,functionName,documentation,runTime,displayStepAsLayer,inputType,outputType;
+@synthesize parametersView,functionName,documentation,runTime,displayStepAsLayer,inputType,outputType,functionTreePath;
 - (id)init
 {
 	self = [super init];

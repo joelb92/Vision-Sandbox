@@ -662,15 +662,15 @@
         <window title="VisionSandbox" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="1410" height="977"/>
+            <rect key="contentRect" x="335" y="390" width="1564" height="997"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="1410" height="977"/>
+                <rect key="frame" x="0.0" y="0.0" width="1564" height="997"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView id="Ak9-0E-3Kc" userLabel="Input Layer View">
-                        <rect key="frame" x="7" y="15" width="200" height="942"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <rect key="frame" x="1330" y="20" width="200" height="942"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="8JJ-hw-jjo">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="942"/>
@@ -837,14 +837,14 @@
                         </shadow>
                     </customView>
                     <customView id="a5b-o1-q5b" userLabel="MainGLView" customClass="GL2DView">
-                        <rect key="frame" x="757" y="0.0" width="565" height="942"/>
+                        <rect key="frame" x="436" y="20" width="886" height="942"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <connections>
                             <outlet property="mouseOverController" destination="qTq-eb-eAd" id="w5v-M1-Gpm"/>
                         </connections>
                     </customView>
                     <customView id="mSf-7n-HcO" userLabel="Algorithm Tree View">
-                        <rect key="frame" x="212" y="15" width="200" height="942"/>
+                        <rect key="frame" x="20" y="20" width="200" height="942"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="40" horizontalPageScroll="10" verticalLineScroll="40" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="XQz-vD-twC">
@@ -874,41 +874,14 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="GroupItemCell" id="omw-uE-KTj" customClass="SingleViewCellView">
-                                                            <rect key="frame" x="1" y="0.0" width="195" height="25"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                            <subviews>
-                                                                <imageView id="B8C-qa-91f">
-                                                                    <rect key="frame" x="3" y="0.0" width="25" height="25"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="FolderIcon" id="buM-VL-iE0"/>
-                                                                </imageView>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="n1u-eR-S3h">
-                                                                    <rect key="frame" x="51" y="4" width="143" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="GroupItemCell" id="V0L-qN-pAL">
-                                                                        <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
-                                                                    <connections>
-                                                                        <binding destination="omw-uE-KTj" name="value" keyPath="objectValue.name" id="1ML-yq-fwd"/>
-                                                                    </connections>
-                                                                </textField>
-                                                            </subviews>
-                                                            <connections>
-                                                                <outlet property="imageView" destination="B8C-qa-91f" id="VGx-eF-JBu"/>
-                                                                <outlet property="textField" destination="n1u-eR-S3h" id="Hhc-pD-r3b"/>
-                                                            </connections>
-                                                        </tableCellView>
                                                         <tableCellView identifier="HeaderCell" wantsLayer="YES" id="jtj-sl-dmC" customClass="SingleViewCellView">
-                                                            <rect key="frame" x="1" y="25" width="195" height="40"/>
+                                                            <rect key="frame" x="1" y="0.0" width="195" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView id="ZxM-E0-U2d">
                                                                     <rect key="frame" x="3" y="2" width="35" height="35"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="OpenGL View Icon" id="scl-FY-yhM"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ListViewIcon" id="scl-FY-yhM"/>
                                                                 </imageView>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="VCf-xD-Npw">
                                                                     <rect key="frame" x="43" y="10" width="131" height="21"/>
@@ -932,12 +905,39 @@
                                                                 <outlet property="textField" destination="VCf-xD-Npw" id="c4Y-vb-uKd"/>
                                                             </connections>
                                                         </tableCellView>
+                                                        <tableCellView identifier="GroupItemCell" id="omw-uE-KTj" customClass="SingleViewCellView">
+                                                            <rect key="frame" x="1" y="40" width="195" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <imageView id="B8C-qa-91f">
+                                                                    <rect key="frame" x="3" y="0.0" width="25" height="25"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="FolderIcon" id="buM-VL-iE0"/>
+                                                                </imageView>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="n1u-eR-S3h">
+                                                                    <rect key="frame" x="30" y="4" width="143" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="GroupItemCell" id="V0L-qN-pAL">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="omw-uE-KTj" name="value" keyPath="objectValue.name" id="1ML-yq-fwd"/>
+                                                                    </connections>
+                                                                </textField>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="B8C-qa-91f" id="VGx-eF-JBu"/>
+                                                                <outlet property="textField" destination="n1u-eR-S3h" id="Hhc-pD-r3b"/>
+                                                            </connections>
+                                                        </tableCellView>
                                                         <tableCellView identifier="FunctionCell" id="0ie-zL-k9f" customClass="SingleViewCellView">
                                                             <rect key="frame" x="1" y="65" width="195" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5S3-N8-R3c">
-                                                                    <rect key="frame" x="26" y="0.0" width="168" height="17"/>
+                                                                    <rect key="frame" x="4" y="0.0" width="168" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="GLObjectCell" id="MmA-x3-Doy">
                                                                         <font key="font" metaFont="system"/>
@@ -980,7 +980,7 @@
                         </shadow>
                     </customView>
                     <customView id="7C6-ry-rEw" userLabel="Function Menu View">
-                        <rect key="frame" x="420" y="15" width="200" height="942"/>
+                        <rect key="frame" x="228" y="20" width="200" height="942"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="Gxe-bQ-Lh2">
@@ -1010,35 +1010,8 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="GroupItemCell" id="eI1-HV-9PU" customClass="SingleViewCellView">
-                                                            <rect key="frame" x="1" y="0.0" width="195" height="25"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                            <subviews>
-                                                                <imageView id="E9u-aZ-y1K">
-                                                                    <rect key="frame" x="3" y="0.0" width="25" height="25"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="FolderIcon" id="HaA-TR-h2o"/>
-                                                                </imageView>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5cF-gV-N5d">
-                                                                    <rect key="frame" x="51" y="4" width="143" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="GroupItemCell" id="i0k-AZ-cCR">
-                                                                        <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
-                                                                    <connections>
-                                                                        <binding destination="eI1-HV-9PU" name="value" keyPath="objectValue.name" id="BZk-qc-bIC"/>
-                                                                    </connections>
-                                                                </textField>
-                                                            </subviews>
-                                                            <connections>
-                                                                <outlet property="imageView" destination="E9u-aZ-y1K" id="iDx-Kl-pUS"/>
-                                                                <outlet property="textField" destination="5cF-gV-N5d" id="l20-0U-lux"/>
-                                                            </connections>
-                                                        </tableCellView>
                                                         <tableCellView identifier="AlgorithmCell" wantsLayer="YES" id="JER-J4-Igu" customClass="SingleViewCellView">
-                                                            <rect key="frame" x="1" y="25" width="195" height="40"/>
+                                                            <rect key="frame" x="1" y="0.0" width="195" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView id="rej-F4-xfN">
@@ -1066,6 +1039,33 @@
                                                             <connections>
                                                                 <outlet property="imageView" destination="rej-F4-xfN" id="VXM-L5-LCc"/>
                                                                 <outlet property="textField" destination="AHk-kR-Iwm" id="mMR-8O-4vU"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                        <tableCellView identifier="GroupItemCell" id="eI1-HV-9PU" customClass="SingleViewCellView">
+                                                            <rect key="frame" x="1" y="40" width="195" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <imageView id="E9u-aZ-y1K">
+                                                                    <rect key="frame" x="3" y="0.0" width="25" height="25"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="GearIcon" id="HaA-TR-h2o"/>
+                                                                </imageView>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5cF-gV-N5d">
+                                                                    <rect key="frame" x="31" y="4" width="143" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="GroupItemCell" id="i0k-AZ-cCR">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="eI1-HV-9PU" name="value" keyPath="objectValue.name" id="BZk-qc-bIC"/>
+                                                                    </connections>
+                                                                </textField>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="E9u-aZ-y1K" id="iDx-Kl-pUS"/>
+                                                                <outlet property="textField" destination="5cF-gV-N5d" id="l20-0U-lux"/>
                                                             </connections>
                                                         </tableCellView>
                                                         <tableCellView identifier="FunctionCell" id="4Ef-O0-5cN" customClass="SingleViewCellView">
@@ -1321,6 +1321,8 @@
     </objects>
     <resources>
         <image name="FolderIcon" width="1024" height="1024"/>
+        <image name="GearIcon" width="512" height="511"/>
+        <image name="ListViewIcon" width="512" height="512"/>
         <image name="OpenGL View Icon" width="1600" height="1024"/>
     </resources>
 </document>

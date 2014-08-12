@@ -9,13 +9,27 @@
 #import "Threshold.h"
 
 @implementation Threshold
+-(id)init
+{
+	self = [super init];
+	if (self) {
+		functionName = @"Threshold";
+		functionTreePath = @"OpenCV/Basic Operations";
+		
+		//Defaults
+		thresh = 127;
+		maxVal =255;
+		type = cv::THRESH_BINARY;
+	}
+	return self;
+}
 -(id)run:(id)input
 {
 	id output = nil;
 	[self beginRun];
 	if ([input isKindOfClass:inputType]) {
 		cv::Mat img = ((OpenImageHandler *)input).Cv;
-		cv::threshold(img, img, 100, 255, CV_THRESH_BINARY);
+		cv::threshold(img, img, thresh, maxVal, type);
 		output = input;
 	}
 	else{

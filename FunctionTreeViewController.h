@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SingleViewCellView.h"
-
+#import "Function.h"
 @interface FunctionTreeItem : NSObject
 {
 	NSString *key;
@@ -32,4 +32,6 @@
 	IBOutlet NSOutlineView *listView;
 }
 -(void)addItem:(FunctionTreeItem *)item toPath:(NSString *)path;
+-(void)addFunctions:(NSArray *)functions;
+-(void)addFunction:(Function *)function;
 @end

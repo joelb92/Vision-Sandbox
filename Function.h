@@ -13,6 +13,7 @@
 {
 	FunctionVisualParametersView *parametersView;
 	NSString *functionName;
+	NSString *functionTreePath;
 	NSString *documentation;
 	Timer *timer;
 	double runTime;
@@ -27,6 +28,7 @@
 @property bool displayStepAsLayer;
 @property (readonly) Class inputType;
 @property (readonly) Class outputType;
+@property NSString *functionTreePath;
 - (id)init;
 - (id)run:(id)input;
 - (void)beginRun;

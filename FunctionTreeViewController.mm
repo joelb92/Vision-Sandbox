@@ -71,18 +71,33 @@
 	return self;
 }
 
+-(void)addFunctions:(NSArray *)functions
+{
+	for(Function *f in functions)
+	{
+		[self addFunction:f];
+	}
+}
+
+-(void)addFunction:(Function *)function
+{
+	FunctionTreeItem *item = [[FunctionTreeItem alloc] initWithKey:function.functionName Object:function];
+	[self addItem:item toPath:function.functionTreePath];
+}
+
 -(void)addItem:(FunctionTreeItem *)item toPath:(NSString *)path
 {
 	NSArray *components = [path componentsSeparatedByString:@"/"];
 	FunctionTreeItem *lastItem = TreeData;
 	for(int i = 0; i < components.count; i++)
 	{
-		NSString *component = [components objectAtIndex:i];
+		NSString *component = [[components objectAtIndex:i] lowercaseString];
 		if (component.length > 0) {
+			component = [component stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:[component substringWithRange:NSMakeRange(0, 1)].uppercaseString];
 			FunctionTreeItem *nextItem = [lastItem.children objectForKey:component];
 			if (!nextItem) {
 				FunctionTreeItem *newItem = [[FunctionTreeItem alloc] initWithKey:component Object:nil];
-				if (i == 1)newItem.isHeader = true;
+				if (i == 0)newItem.isHeader = true;
 				[lastItem addChild:newItem];
 				nextItem = [lastItem.children objectForKey:component];
 			}
@@ -127,16 +142,16 @@
 - (NSTableRowView*)outlineView:(NSOutlineView *)outlineView rowViewForItem:(id)item
 {
 	NSTableRowView*rowView = [[NSTableRowView alloc] init];
-	FunctionTreeItem*Item = item;
-	if(Item == nil) Item = TreeData;
-	if(Item.object)
-	{
-		id object = Item.object;
-		if(object)
-		{
+//	FunctionTreeItem*Item = item;
+//	if(Item == nil) Item = TreeData;
+//	if(Item.object)
+//	{
+//		id object = Item.object;
+//		if(object)
+//		{
 			[rowView setBackgroundColor:[NSColor colorWithCalibratedRed:0 green:0 blue:1 alpha:1]];
-		}
-	}
+//		}
+//	}
 	return rowView;
 }
 

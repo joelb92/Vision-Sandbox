@@ -11,6 +11,8 @@
 #import "GLOutlineViewController.h"
 #import "GL2DView.h"
 #import "FunctionTreeViewController.h"
+#import "PluginManager.h"
+#import "Function.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
 	IBOutlet GLOutlineViewController *mainGLOutlineView;
