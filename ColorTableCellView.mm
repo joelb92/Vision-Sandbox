@@ -10,20 +10,52 @@
 
 @implementation ColorTableCellView
 
+@dynamic backgroundColor;
+-(id)init
+{
+	self = [super init];
+	if (self)
+	{
+		self.backgroundColor = [NSColor windowBackgroundColor];
+	}
+	return self;
+}
+
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
+    if(self)
+	{
+		self.backgroundColor = [NSColor windowBackgroundColor];
     }
     return self;
 }
-
-- (void)drawRect:(NSRect)dirtyRect
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-	[super drawRect:dirtyRect];
+	self = [super initWithCoder:aDecoder];
+	if (self) {
+		self.backgroundColor = [NSColor windowBackgroundColor];
+	}
+	return self;
+}
+
+- (void)setBackgroundColor:(NSColor*)backC
+{
+	backgroundColor = backC;
 	
-    // Drawing code here.
+	[self setNeedsDisplay:YES];
+}
+- (NSColor*)backgroundColor
+{
+	return backgroundColor;
+}
+
+
+- (void)drawRect:(NSRect)frame
+{
+    NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect:frame];
+	[backgroundColor setFill];
+	[rectanglePath fill];
 }
 
 @end

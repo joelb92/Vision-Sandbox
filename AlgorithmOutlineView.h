@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "FunctionVisualParametersView.h"
 @interface AlgorithmOutlineView : NSOutlineView
 
 @end

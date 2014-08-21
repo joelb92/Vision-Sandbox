@@ -7,12 +7,16 @@
 //
 
 #import "Function.h"
-#import "OpenImageHandler.h"
+//#import "OpenImageHandler.h"
 
 @interface Threshold : Function
 {
-	double thresh;
-	double maxVal;
-	int type;
+	double set_thresh;
+	double set_maxVal;
+	NSString *set_type;
 }
+@property double set_thresh;
+@property double set_maxVal;
+@property NSString *set_type;
+
 @end

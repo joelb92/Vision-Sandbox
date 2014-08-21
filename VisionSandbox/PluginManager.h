@@ -10,6 +10,7 @@
 #import <objc/objc-api.h>
 #import <objc/runtime.h>
 #import "Threshold.h"
+#import "Algorithm.h"
 @interface PluginManager : NSObject
 {
 	NSMutableArray *functionClasses;

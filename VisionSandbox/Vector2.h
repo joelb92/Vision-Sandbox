@@ -8,7 +8,6 @@
 #import <Foundation/Foundation.h>
 #import "math.h"
 #import "Vector3.h"
-#include <tr1/unordered_map>
 #ifndef Vector2_H_
 #define Vector2_H_
 typedef enum
@@ -97,44 +96,44 @@ public:
 private:
 };
 
-struct Vector2SortByDistance
-{
-	Vector2SortByDistance(Vector2 refPoint) { this->refPoint = refPoint; }
-    inline bool operator() (const Vector2& vec1, const Vector2& vec2)
-    {
-        return (Vector2(vec1).SqDistanceTo(refPoint) < Vector2(vec2).SqDistanceTo(refPoint));
-    }
-	Vector2 refPoint;
-};
-
-namespace std
-{
-	namespace tr1
-	{
-    // Specializations for unordered containers
-	
-    template <>
-    struct hash<Vector2> : public unary_function<Vector2, size_t>
-    {
-        size_t operator()(const Vector2& value) const
-        {
-			std::tr1::hash<float> fHash;
-			return (51 + fHash(value.x)) * 51 + fHash(value.y);
-        }
-
-    };
-	
-	} // namespace tr1
-	
-	template <>
-	struct equal_to<Vector2> : public unary_function<Vector2, bool>
-	{
-		bool operator()(const Vector2& x, const Vector2& y) const
-		{
-			return x.x == y.x && x.y == y.y;
-		}
-	};
-	
-} // namespace std
+//struct Vector2SortByDistance
+//{
+//	Vector2SortByDistance(Vector2 refPoint) { this->refPoint = refPoint; }
+//    inline bool operator() (const Vector2& vec1, const Vector2& vec2)
+//    {
+//        return (Vector2(vec1).SqDistanceTo(refPoint) < Vector2(vec2).SqDistanceTo(refPoint));
+//    }
+//	Vector2 refPoint;
+//};
+//
+//namespace std
+//{
+//	namespace tr1
+//	{
+//    // Specializations for unordered containers
+//	
+//    template <>
+//    struct hash<Vector2> : public unary_function<Vector2, size_t>
+//    {
+//        size_t operator()(const Vector2& value) const
+//        {
+//			std::tr1::hash<float> fHash;
+//			return (51 + fHash(value.x)) * 51 + fHash(value.y);
+//        }
+//
+//    };
+//	
+//	} // namespace tr1
+//	
+//	template <>
+//	struct equal_to<Vector2> : public unary_function<Vector2, bool>
+//	{
+//		bool operator()(const Vector2& x, const Vector2& y) const
+//		{
+//			return x.x == y.x && x.y == y.y;
+//		}
+//	};
+//	
+//} // namespace std
 
 #endif

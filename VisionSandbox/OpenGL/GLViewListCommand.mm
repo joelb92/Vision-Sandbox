@@ -10,6 +10,8 @@
 #define CommandsEnabled true
 
 @implementation GLViewListCommand : NSObject
+static int maxWidth = 0;
+static int maxHeight = 0;
 + (void)AddView:(id)view ForKeyPath:(NSString*)key
 {
 	if(CommandsEnabled) [[NSNotificationCenter defaultCenter] postNotificationName:GL_AddGLViewNofification object:[[[AddViewCommand alloc] initWithView:view
@@ -34,11 +36,25 @@
 
 + (void)AddObject:(id)object ToViewKeyPath:(NSString*)viewKeyPath ForKeyPath:(NSString*)key
 {
+	if ([object isKindOfClass:OpenImageHandler.class])
+	{
+		int height = [(OpenImageHandler *)object size].height;
+		int width = [(OpenImageHandler *)object size].width;
+		if (width > maxWidth) {
+			maxWidth = width;
+		}
+		if (height > maxHeight) {
+			maxHeight = height;
+		}
+	}
+	
 	if(CommandsEnabled) [[NSNotificationCenter defaultCenter] postNotificationName:GL_AddGLObjectToGLViewNotification object:[[[AddObjectCommand alloc] initWithObject:object
 																																							   KeyPath:key
 																																						  OtherKeyPath:nil
 																																						   ViewKeyPath:viewKeyPath
 																																								 Place:WhereEver] autorelease]];
+	[GLViewListCommand SetViewKeyPath:viewKeyPath MaxImageSpaceRect:vector2Rect(Vector2(0,0), Vector2(maxWidth,maxHeight))];
+
 }
 + (void)AddObject:(id)object ToViewKeyPath:(NSString*)viewKeyPath ForKeyPath:(NSString*)key AfterKeyPath:(NSString*)afterKey
 {

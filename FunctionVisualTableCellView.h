@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface FunctionVisualTableCellView : NSTableCellView
-
+#import "ColorTableCellView.h"
+@interface FunctionVisualTableCellView : ColorTableCellView
+-(void)applySetting:(id)setting forKey:(NSString *)key;
+-(void)applyValue:(id)val;
+-(id)getValue;
+-(void)settingChanged;
 @end

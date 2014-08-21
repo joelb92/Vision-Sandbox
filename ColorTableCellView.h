@@ -9,5 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ColorTableCellView : NSTableCellView
-
+{
+	NSColor *backgroundColor;
+}
+@property (retain) NSColor*backgroundColor;
 @end

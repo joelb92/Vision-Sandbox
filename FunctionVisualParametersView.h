@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface FunctionVisualParametersView : NSView
-
+#import "ColorTableCellView.h"
+@interface FunctionVisualParametersView : ColorTableCellView
+{
+	NSMutableDictionary *subViewDictionary;
+	int totalRunningHeight;
+}
+-(void)addSubview:(NSTableCellView *)aView forKey:(NSString *)key;
+-(NSTableCellView *)subviewForKey:(NSString *)key;
 @end

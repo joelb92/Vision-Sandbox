@@ -9,5 +9,10 @@
 #import "Function.h"
 
 @interface Dilate : Function
-
+{
+	int set_kernelSize;
+	int set_iterations;
+}
+@property int set_kernelSize;
+@property int set_iterations;
 @end

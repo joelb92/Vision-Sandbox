@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface AlgorithmTreeViewController : NSObject
-
+#import "FunctionTreeItem.h"
+#import "Algorithm.h"
+#import "SingleViewCellView.h"
+@interface AlgorithmTreeViewController : NSObject <NSOutlineViewDataSource,NSOutlineViewDelegate>
+{
+	Algorithm *TreeData;
+	IBOutlet NSOutlineView *listView;
+}
+-(Function *)FunctionAtIndex:(int)index;
+-(void)addFunction:(Function *)function;
+-(void)insertFunction:(Function *)function atIndex:(int)index;
+-(void)replaceFunctionAtIndex:(int)index withFunction:(Function *)function;
+-(Algorithm *)Algorithm;
+-(void)setAlgorithm:(Algorithm *)al;
+-(void)removeFunctionAtIndex:(int)index;
+-(void)removeFunction:(Function *)func;
 @end

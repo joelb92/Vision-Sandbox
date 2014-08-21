@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AlgorithmTreeViewController.h"
 @interface AlgorithmArchiverController : NSObject
-
+{
+}
 @end

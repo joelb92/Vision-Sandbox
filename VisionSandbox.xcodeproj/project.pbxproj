@@ -68,7 +68,7 @@
 		5D2898C5199202710036CFD6 /* idArr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D2898AF199202710036CFD6 /* idArr.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D2898C6199202710036CFD6 /* DoubleArr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D2898B1199202710036CFD6 /* DoubleArr.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D2898C7199202710036CFD6 /* CvSeqArr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D2898B3199202710036CFD6 /* CvSeqArr.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5D55C53119933F8800D9F78A /* SingleViewCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C53019933F8800D9F78A /* SingleViewCellView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5D55C53119933F8800D9F78A /* SingleViewCellView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C53019933F8800D9F78A /* SingleViewCellView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C53419933FAD00D9F78A /* SpaceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C53319933FAD00D9F78A /* SpaceConverter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C53719933FCD00D9F78A /* ReadWriteLock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C53619933FCD00D9F78A /* ReadWriteLock.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C53A199340DA00D9F78A /* Color.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C539199340DA00D9F78A /* Color.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -76,21 +76,35 @@
 		5D55C557199453B900D9F78A /* OpenImageHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C556199453B900D9F78A /* OpenImageHandler.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C55A1994543D00D9F78A /* OpenContourHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5591994543D00D9F78A /* OpenContourHandler.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C55D1994548900D9F78A /* ImageThresholdMask.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C55C1994548900D9F78A /* ImageThresholdMask.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5D55C5621994556D00D9F78A /* NSImage+saveAsJpegWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5D55C5621994556D00D9F78A /* NSImage+saveAsJpegWithName.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C5631994556D00D9F78A /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5D55C56619948EFC00D9F78A /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D55C56419948EFB00D9F78A /* FolderIcon.png */; };
 		5D55C56719948EFC00D9F78A /* OpenGL View Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D55C56519948EFC00D9F78A /* OpenGL View Icon.png */; };
 		5D55C5771995D1AE00D9F78A /* ImageListView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5761995D1AE00D9F78A /* ImageListView.mm */; };
-		5D55C57A1995F04200D9F78A /* FunctionVisualTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.m */; };
+		5D55C57A1995F04200D9F78A /* FunctionVisualTableCellView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.mm */; };
 		5D55C57D1995F29C00D9F78A /* Function.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C57C1995F29C00D9F78A /* Function.mm */; };
-		5D55C5811995F36700D9F78A /* FunctionVisualParametersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5801995F36700D9F78A /* FunctionVisualParametersView.m */; };
-		5D55C5841995F57700D9F78A /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5831995F57700D9F78A /* Timer.m */; };
+		5D55C5811995F36700D9F78A /* FunctionVisualParametersView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5801995F36700D9F78A /* FunctionVisualParametersView.mm */; };
+		5D55C5841995F57700D9F78A /* Timer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C5831995F57700D9F78A /* Timer.mm */; };
 		5D55C58819972FDB00D9F78A /* Threshold.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D55C58719972FDB00D9F78A /* Threshold.mm */; };
+		5D94B565199C185300E080E5 /* SliderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B564199C185300E080E5 /* SliderView.mm */; };
+		5D94B568199C313500E080E5 /* ComboView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B567199C313500E080E5 /* ComboView.mm */; };
+		5D94B56B199C318400E080E5 /* RadioView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B56A199C318400E080E5 /* RadioView.mm */; };
+		5D94B56E199C319100E080E5 /* CheckboxView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B56D199C319100E080E5 /* CheckboxView.mm */; };
+		5D94B571199D3A1200E080E5 /* PropertyUtility.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B570199D3A1200E080E5 /* PropertyUtility.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5D94B574199D416400E080E5 /* SliderDoubleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B573199D416400E080E5 /* SliderDoubleView.mm */; };
+		5D94B577199F0C0A00E080E5 /* Dilate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D94B576199F0C0A00E080E5 /* Dilate.mm */; };
 		5DD4C75D199740990066DFE1 /* FunctionTreeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C75C199740990066DFE1 /* FunctionTreeViewController.mm */; };
 		5DD4C76219990F470066DFE1 /* ListViewIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD4C76119990F470066DFE1 /* ListViewIcon.png */; };
 		5DD4C76519991A2B0066DFE1 /* GearIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD4C76419991A2B0066DFE1 /* GearIcon.png */; };
 		5DD4C76819991DB30066DFE1 /* PluginManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C76719991DB30066DFE1 /* PluginManager.mm */; };
 		5DD4C76A19991E890066DFE1 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD4C76919991E890066DFE1 /* libobjc.dylib */; };
+		5DD4C76D1999AD9B0066DFE1 /* AlgorithmTreeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C76C1999AD9B0066DFE1 /* AlgorithmTreeViewController.mm */; };
+		5DD4C7701999ADED0066DFE1 /* FunctionTreeItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C76F1999ADED0066DFE1 /* FunctionTreeItem.mm */; };
+		5DD4C7741999B0E40066DFE1 /* Algorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C7731999B0E40066DFE1 /* Algorithm.mm */; };
+		5DD4C7771999D2C30066DFE1 /* AlgorithmArchiverController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C7761999D2C30066DFE1 /* AlgorithmArchiverController.mm */; };
+		5DF796AB199B2229003D7930 /* ColorTableCellView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DF796AA199B2229003D7930 /* ColorTableCellView.mm */; };
+		5DF796AE199B2B4D003D7930 /* VisualFunctionViewHolder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DF796AD199B2B4D003D7930 /* VisualFunctionViewHolder.mm */; };
+		5DF796B2199BEDBE003D7930 /* AlgorithmOutlineView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DF796B1199BEDBE003D7930 /* AlgorithmOutlineView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,7 +233,7 @@
 		5D2898B2199202710036CFD6 /* CvSeqArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvSeqArr.h; sourceTree = "<group>"; };
 		5D2898B3199202710036CFD6 /* CvSeqArr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CvSeqArr.mm; sourceTree = "<group>"; };
 		5D55C52F19933F8800D9F78A /* SingleViewCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewCellView.h; sourceTree = "<group>"; };
-		5D55C53019933F8800D9F78A /* SingleViewCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewCellView.m; sourceTree = "<group>"; };
+		5D55C53019933F8800D9F78A /* SingleViewCellView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SingleViewCellView.mm; sourceTree = "<group>"; };
 		5D55C53219933FAD00D9F78A /* SpaceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceConverter.h; sourceTree = "<group>"; };
 		5D55C53319933FAD00D9F78A /* SpaceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpaceConverter.mm; sourceTree = "<group>"; };
 		5D55C53519933FCD00D9F78A /* ReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadWriteLock.h; path = ../ReadWriteLock.h; sourceTree = "<group>"; };
@@ -234,7 +248,7 @@
 		5D55C55B1994548900D9F78A /* ImageThresholdMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageThresholdMask.h; path = ../ImageThresholdMask.h; sourceTree = "<group>"; };
 		5D55C55C1994548900D9F78A /* ImageThresholdMask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ImageThresholdMask.mm; path = ../ImageThresholdMask.mm; sourceTree = "<group>"; };
 		5D55C55E1994556D00D9F78A /* NSImage+saveAsJpegWithName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+saveAsJpegWithName.h"; sourceTree = "<group>"; };
-		5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+saveAsJpegWithName.m"; sourceTree = "<group>"; };
+		5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+saveAsJpegWithName.mm"; sourceTree = "<group>"; };
 		5D55C5601994556D00D9F78A /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = "<group>"; };
 		5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = "<group>"; };
 		5D55C56419948EFB00D9F78A /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FolderIcon.png; path = ../FolderIcon.png; sourceTree = "<group>"; };
@@ -242,15 +256,29 @@
 		5D55C5751995D1AE00D9F78A /* ImageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageListView.h; path = ../ImageListView.h; sourceTree = "<group>"; };
 		5D55C5761995D1AE00D9F78A /* ImageListView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ImageListView.mm; path = ../ImageListView.mm; sourceTree = "<group>"; };
 		5D55C5781995F04200D9F78A /* FunctionVisualTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionVisualTableCellView.h; sourceTree = "<group>"; };
-		5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionVisualTableCellView.m; sourceTree = "<group>"; };
+		5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionVisualTableCellView.mm; sourceTree = "<group>"; };
 		5D55C57B1995F29C00D9F78A /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Function.h; path = ../Function.h; sourceTree = "<group>"; };
 		5D55C57C1995F29C00D9F78A /* Function.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Function.mm; path = ../Function.mm; sourceTree = "<group>"; };
 		5D55C57F1995F36700D9F78A /* FunctionVisualParametersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionVisualParametersView.h; sourceTree = "<group>"; };
-		5D55C5801995F36700D9F78A /* FunctionVisualParametersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionVisualParametersView.m; sourceTree = "<group>"; };
+		5D55C5801995F36700D9F78A /* FunctionVisualParametersView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionVisualParametersView.mm; sourceTree = "<group>"; };
 		5D55C5821995F57700D9F78A /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = ../Timer.h; sourceTree = "<group>"; };
-		5D55C5831995F57700D9F78A /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = ../Timer.m; sourceTree = "<group>"; };
+		5D55C5831995F57700D9F78A /* Timer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Timer.mm; path = ../Timer.mm; sourceTree = "<group>"; };
 		5D55C58619972FDB00D9F78A /* Threshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Threshold.h; sourceTree = "<group>"; };
 		5D55C58719972FDB00D9F78A /* Threshold.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Threshold.mm; sourceTree = "<group>"; };
+		5D94B563199C185300E080E5 /* SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		5D94B564199C185300E080E5 /* SliderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SliderView.mm; sourceTree = "<group>"; };
+		5D94B566199C313500E080E5 /* ComboView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboView.h; sourceTree = "<group>"; };
+		5D94B567199C313500E080E5 /* ComboView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ComboView.mm; sourceTree = "<group>"; };
+		5D94B569199C318400E080E5 /* RadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioView.h; sourceTree = "<group>"; };
+		5D94B56A199C318400E080E5 /* RadioView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RadioView.mm; sourceTree = "<group>"; };
+		5D94B56C199C319100E080E5 /* CheckboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckboxView.h; sourceTree = "<group>"; };
+		5D94B56D199C319100E080E5 /* CheckboxView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CheckboxView.mm; sourceTree = "<group>"; };
+		5D94B56F199D3A1200E080E5 /* PropertyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyUtility.h; sourceTree = "<group>"; };
+		5D94B570199D3A1200E080E5 /* PropertyUtility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PropertyUtility.mm; sourceTree = "<group>"; };
+		5D94B572199D416400E080E5 /* SliderDoubleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderDoubleView.h; sourceTree = "<group>"; };
+		5D94B573199D416400E080E5 /* SliderDoubleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SliderDoubleView.mm; sourceTree = "<group>"; };
+		5D94B575199F0C0A00E080E5 /* Dilate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dilate.h; sourceTree = "<group>"; };
+		5D94B576199F0C0A00E080E5 /* Dilate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dilate.mm; sourceTree = "<group>"; };
 		5DD4C75B199740990066DFE1 /* FunctionTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionTreeViewController.h; path = ../FunctionTreeViewController.h; sourceTree = "<group>"; };
 		5DD4C75C199740990066DFE1 /* FunctionTreeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FunctionTreeViewController.mm; path = ../FunctionTreeViewController.mm; sourceTree = "<group>"; };
 		5DD4C76119990F470066DFE1 /* ListViewIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListViewIcon.png; sourceTree = "<group>"; };
@@ -258,6 +286,20 @@
 		5DD4C76619991DB30066DFE1 /* PluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
 		5DD4C76719991DB30066DFE1 /* PluginManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PluginManager.mm; sourceTree = "<group>"; };
 		5DD4C76919991E890066DFE1 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libobjc.dylib; sourceTree = DEVELOPER_DIR; };
+		5DD4C76B1999AD9B0066DFE1 /* AlgorithmTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmTreeViewController.h; sourceTree = "<group>"; };
+		5DD4C76C1999AD9B0066DFE1 /* AlgorithmTreeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AlgorithmTreeViewController.mm; sourceTree = "<group>"; };
+		5DD4C76E1999ADED0066DFE1 /* FunctionTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionTreeItem.h; sourceTree = "<group>"; };
+		5DD4C76F1999ADED0066DFE1 /* FunctionTreeItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionTreeItem.mm; sourceTree = "<group>"; };
+		5DD4C7721999B0E40066DFE1 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		5DD4C7731999B0E40066DFE1 /* Algorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Algorithm.mm; sourceTree = "<group>"; };
+		5DD4C7751999D2C30066DFE1 /* AlgorithmArchiverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmArchiverController.h; sourceTree = "<group>"; };
+		5DD4C7761999D2C30066DFE1 /* AlgorithmArchiverController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AlgorithmArchiverController.mm; sourceTree = "<group>"; };
+		5DF796A9199B2229003D7930 /* ColorTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTableCellView.h; sourceTree = "<group>"; };
+		5DF796AA199B2229003D7930 /* ColorTableCellView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorTableCellView.mm; sourceTree = "<group>"; };
+		5DF796AC199B2B4D003D7930 /* VisualFunctionViewHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualFunctionViewHolder.h; sourceTree = "<group>"; };
+		5DF796AD199B2B4D003D7930 /* VisualFunctionViewHolder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VisualFunctionViewHolder.mm; sourceTree = "<group>"; };
+		5DF796B0199BEDBE003D7930 /* AlgorithmOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmOutlineView.h; sourceTree = "<group>"; };
+		5DF796B1199BEDBE003D7930 /* AlgorithmOutlineView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AlgorithmOutlineView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +381,8 @@
 			children = (
 				5D2897A31991E2300036CFD6 /* AppDelegate.h */,
 				5D2897A41991E2300036CFD6 /* AppDelegate.mm */,
+				5D94B56F199D3A1200E080E5 /* PropertyUtility.h */,
+				5D94B570199D3A1200E080E5 /* PropertyUtility.mm */,
 				5D2898661992020C0036CFD6 /* Algebra */,
 				5D28988B199202620036CFD6 /* Array Types */,
 				5D55C5701995BFFB00D9F78A /* Categories */,
@@ -490,14 +534,15 @@
 		5D55C56F1995BFCF00D9F78A /* View Sublcasses */ = {
 			isa = PBXGroup;
 			children = (
-				5D55C57F1995F36700D9F78A /* FunctionVisualParametersView.h */,
-				5D55C5801995F36700D9F78A /* FunctionVisualParametersView.m */,
+				5DF796AF199BED55003D7930 /* Visual Function Views */,
 				5D2898631991FFCA0036CFD6 /* DragableSubView.h */,
 				5D2898641991FFCA0036CFD6 /* DragableSubView.mm */,
 				5D55C52F19933F8800D9F78A /* SingleViewCellView.h */,
-				5D55C53019933F8800D9F78A /* SingleViewCellView.m */,
-				5D55C5781995F04200D9F78A /* FunctionVisualTableCellView.h */,
-				5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.m */,
+				5D55C53019933F8800D9F78A /* SingleViewCellView.mm */,
+				5DF796A9199B2229003D7930 /* ColorTableCellView.h */,
+				5DF796AA199B2229003D7930 /* ColorTableCellView.mm */,
+				5DF796B0199BEDBE003D7930 /* AlgorithmOutlineView.h */,
+				5DF796B1199BEDBE003D7930 /* AlgorithmOutlineView.mm */,
 			);
 			name = "View Sublcasses";
 			path = ..;
@@ -507,7 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				5D55C55E1994556D00D9F78A /* NSImage+saveAsJpegWithName.h */,
-				5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.m */,
+				5D55C55F1994556D00D9F78A /* NSImage+saveAsJpegWithName.mm */,
 				5D55C5601994556D00D9F78A /* NSImage+OpenCV.h */,
 				5D55C5611994556D00D9F78A /* NSImage+OpenCV.mm */,
 			);
@@ -589,12 +634,11 @@
 			children = (
 				5DD4C76619991DB30066DFE1 /* PluginManager.h */,
 				5DD4C76719991DB30066DFE1 /* PluginManager.mm */,
+				5DD4C7711999B0650066DFE1 /* Algorithms */,
 				5D55C5821995F57700D9F78A /* Timer.h */,
-				5D55C5831995F57700D9F78A /* Timer.m */,
+				5D55C5831995F57700D9F78A /* Timer.mm */,
 				5D55C57B1995F29C00D9F78A /* Function.h */,
 				5D55C57C1995F29C00D9F78A /* Function.mm */,
-				5D55C58619972FDB00D9F78A /* Threshold.h */,
-				5D55C58719972FDB00D9F78A /* Threshold.mm */,
 				5D55C5851995F77300D9F78A /* OpenCV */,
 			);
 			name = "Functions for Algorithms";
@@ -603,8 +647,29 @@
 		5D55C5851995F77300D9F78A /* OpenCV */ = {
 			isa = PBXGroup;
 			children = (
+				5D55C58619972FDB00D9F78A /* Threshold.h */,
+				5D55C58719972FDB00D9F78A /* Threshold.mm */,
+				5D94B575199F0C0A00E080E5 /* Dilate.h */,
+				5D94B576199F0C0A00E080E5 /* Dilate.mm */,
 			);
 			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		5D94B562199C17F900E080E5 /* Visual Parameter Field Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D94B563199C185300E080E5 /* SliderView.h */,
+				5D94B564199C185300E080E5 /* SliderView.mm */,
+				5D94B572199D416400E080E5 /* SliderDoubleView.h */,
+				5D94B573199D416400E080E5 /* SliderDoubleView.mm */,
+				5D94B566199C313500E080E5 /* ComboView.h */,
+				5D94B567199C313500E080E5 /* ComboView.mm */,
+				5D94B569199C318400E080E5 /* RadioView.h */,
+				5D94B56A199C318400E080E5 /* RadioView.mm */,
+				5D94B56C199C319100E080E5 /* CheckboxView.h */,
+				5D94B56D199C319100E080E5 /* CheckboxView.mm */,
+			);
+			name = "Visual Parameter Field Views";
 			sourceTree = "<group>";
 		};
 		5DD4C763199916F40066DFE1 /* GUI Controllers */ = {
@@ -612,10 +677,39 @@
 			children = (
 				5D55C5751995D1AE00D9F78A /* ImageListView.h */,
 				5D55C5761995D1AE00D9F78A /* ImageListView.mm */,
+				5DD4C76E1999ADED0066DFE1 /* FunctionTreeItem.h */,
+				5DD4C76F1999ADED0066DFE1 /* FunctionTreeItem.mm */,
 				5DD4C75B199740990066DFE1 /* FunctionTreeViewController.h */,
 				5DD4C75C199740990066DFE1 /* FunctionTreeViewController.mm */,
+				5DD4C76B1999AD9B0066DFE1 /* AlgorithmTreeViewController.h */,
+				5DD4C76C1999AD9B0066DFE1 /* AlgorithmTreeViewController.mm */,
 			);
 			name = "GUI Controllers";
+			sourceTree = "<group>";
+		};
+		5DD4C7711999B0650066DFE1 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				5DD4C7721999B0E40066DFE1 /* Algorithm.h */,
+				5DD4C7731999B0E40066DFE1 /* Algorithm.mm */,
+				5DD4C7751999D2C30066DFE1 /* AlgorithmArchiverController.h */,
+				5DD4C7761999D2C30066DFE1 /* AlgorithmArchiverController.mm */,
+			);
+			name = Algorithms;
+			sourceTree = "<group>";
+		};
+		5DF796AF199BED55003D7930 /* Visual Function Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D94B562199C17F900E080E5 /* Visual Parameter Field Views */,
+				5D55C5781995F04200D9F78A /* FunctionVisualTableCellView.h */,
+				5D55C5791995F04200D9F78A /* FunctionVisualTableCellView.mm */,
+				5D55C57F1995F36700D9F78A /* FunctionVisualParametersView.h */,
+				5D55C5801995F36700D9F78A /* FunctionVisualParametersView.mm */,
+				5DF796AC199B2B4D003D7930 /* VisualFunctionViewHolder.h */,
+				5DF796AD199B2B4D003D7930 /* VisualFunctionViewHolder.mm */,
+			);
+			name = "Visual Function Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -726,26 +820,32 @@
 				5D2898481991FA890036CFD6 /* GLObjectList.mm in Sources */,
 				5D55C53719933FCD00D9F78A /* ReadWriteLock.mm in Sources */,
 				5D28984E1991FA890036CFD6 /* TreeListItem.mm in Sources */,
+				5D94B574199D416400E080E5 /* SliderDoubleView.mm in Sources */,
 				5D28984B1991FA890036CFD6 /* GLViewList.mm in Sources */,
 				5D2898891992022E0036CFD6 /* AvVector2.mm in Sources */,
 				5D55C53419933FAD00D9F78A /* SpaceConverter.mm in Sources */,
 				5D2898B4199202710036CFD6 /* Vector2Arr.mm in Sources */,
 				5D2898C5199202710036CFD6 /* idArr.mm in Sources */,
 				5D2898451991FA890036CFD6 /* GL3DView.mm in Sources */,
-				5D55C5621994556D00D9F78A /* NSImage+saveAsJpegWithName.m in Sources */,
+				5D55C5621994556D00D9F78A /* NSImage+saveAsJpegWithName.mm in Sources */,
+				5D94B565199C185300E080E5 /* SliderView.mm in Sources */,
 				5D2898851992022E0036CFD6 /* Line2.mm in Sources */,
 				5D28985E1991FF8E0036CFD6 /* GLProtractor.mm in Sources */,
 				5D28984A1991FA890036CFD6 /* GLView.mm in Sources */,
 				5D28985F1991FF8E0036CFD6 /* GLRuler.mm in Sources */,
-				5D55C53119933F8800D9F78A /* SingleViewCellView.m in Sources */,
+				5D55C53119933F8800D9F78A /* SingleViewCellView.mm in Sources */,
 				5D2898491991FA890036CFD6 /* GLOutlineViewController.mm in Sources */,
+				5DF796B2199BEDBE003D7930 /* AlgorithmOutlineView.mm in Sources */,
 				5D2898611991FF8E0036CFD6 /* GLViewMouseOverController.mm in Sources */,
 				5D55C53A199340DA00D9F78A /* Color.mm in Sources */,
 				5D2898BE199202710036CFD6 /* colorArr.mm in Sources */,
 				5D2898C7199202710036CFD6 /* CvSeqArr.mm in Sources */,
+				5D94B577199F0C0A00E080E5 /* Dilate.mm in Sources */,
+				5DD4C7771999D2C30066DFE1 /* AlgorithmArchiverController.mm in Sources */,
 				5D2898BB199202710036CFD6 /* boolArr.mm in Sources */,
 				5D55C5771995D1AE00D9F78A /* ImageListView.mm in Sources */,
 				5D55C58819972FDB00D9F78A /* Threshold.mm in Sources */,
+				5D94B568199C313500E080E5 /* ComboView.mm in Sources */,
 				5DD4C75D199740990066DFE1 /* FunctionTreeViewController.mm in Sources */,
 				5D2898B7199202710036CFD6 /* Vector3Arr.mm in Sources */,
 				5D2897A51991E2300036CFD6 /* AppDelegate.mm in Sources */,
@@ -754,6 +854,7 @@
 				5D2897C91991F06E0036CFD6 /* Camera.mm in Sources */,
 				5D55C557199453B900D9F78A /* OpenImageHandler.mm in Sources */,
 				5D2898821992022E0036CFD6 /* Ray3.mm in Sources */,
+				5DF796AB199B2229003D7930 /* ColorTableCellView.mm in Sources */,
 				5D2898B8199202710036CFD6 /* Ray3Arr.mm in Sources */,
 				5D28979E1991E2300036CFD6 /* main.m in Sources */,
 				5D2898BC199202710036CFD6 /* floatArr.mm in Sources */,
@@ -762,28 +863,35 @@
 				5D28984C1991FA890036CFD6 /* GLViewListCommand.mm in Sources */,
 				5D2898881992022E0036CFD6 /* vector2Rect.mm in Sources */,
 				5D55C55A1994543D00D9F78A /* OpenContourHandler.mm in Sources */,
+				5DD4C76D1999AD9B0066DFE1 /* AlgorithmTreeViewController.mm in Sources */,
 				5D55C57D1995F29C00D9F78A /* Function.mm in Sources */,
 				5D2898C4199202710036CFD6 /* DisplayListArr.mm in Sources */,
 				5D2898B6199202710036CFD6 /* LineSegment3Arr.mm in Sources */,
 				5D2898861992022E0036CFD6 /* Line3.mm in Sources */,
-				5D55C57A1995F04200D9F78A /* FunctionVisualTableCellView.m in Sources */,
+				5D55C57A1995F04200D9F78A /* FunctionVisualTableCellView.mm in Sources */,
 				5DD4C76819991DB30066DFE1 /* PluginManager.mm in Sources */,
 				5D28984D1991FA890036CFD6 /* TreeList.mm in Sources */,
 				5D2898811992022E0036CFD6 /* Ray2.mm in Sources */,
 				5D2898BD199202710036CFD6 /* intArr.mm in Sources */,
-				5D55C5841995F57700D9F78A /* Timer.m in Sources */,
+				5D55C5841995F57700D9F78A /* Timer.mm in Sources */,
+				5DD4C7741999B0E40066DFE1 /* Algorithm.mm in Sources */,
 				5D2898461991FA890036CFD6 /* GLObject.mm in Sources */,
 				5D2898471991FA890036CFD6 /* GLObjectData.mm in Sources */,
-				5D55C5811995F36700D9F78A /* FunctionVisualParametersView.m in Sources */,
+				5DF796AE199B2B4D003D7930 /* VisualFunctionViewHolder.mm in Sources */,
+				5D55C5811995F36700D9F78A /* FunctionVisualParametersView.mm in Sources */,
 				5D2898B5199202710036CFD6 /* LineSegment2Arr.mm in Sources */,
+				5D94B56E199C319100E080E5 /* CheckboxView.mm in Sources */,
 				5D2898C0199202710036CFD6 /* DirectionArray.mm in Sources */,
+				5DD4C7701999ADED0066DFE1 /* FunctionTreeItem.mm in Sources */,
 				5D2898841992022E0036CFD6 /* LineSegment3.mm in Sources */,
 				5D2898C6199202710036CFD6 /* DoubleArr.mm in Sources */,
 				5D2898651991FFCA0036CFD6 /* DragableSubView.mm in Sources */,
 				5D2898831992022E0036CFD6 /* LineSegment2.mm in Sources */,
 				5D2898431991FA890036CFD6 /* GL2DView.mm in Sources */,
 				5D55C5631994556D00D9F78A /* NSImage+OpenCV.mm in Sources */,
+				5D94B56B199C318400E080E5 /* RadioView.mm in Sources */,
 				5D28987F1992022E0036CFD6 /* Vector2.mm in Sources */,
+				5D94B571199D3A1200E080E5 /* PropertyUtility.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

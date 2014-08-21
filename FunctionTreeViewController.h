@@ -9,28 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "SingleViewCellView.h"
 #import "Function.h"
-@interface FunctionTreeItem : NSObject
-{
-	NSString *key;
-	NSMutableDictionary *children;
-	NSMutableArray *childrenOrderedKeys;
-	id object;
-	bool isHeader;
-}
-@property NSString *key;
-@property NSMutableDictionary *children;
-@property NSMutableArray *childrenOrderedKeys;
-@property id object;
-@property bool isHeader;
--(id)initWithKey:(NSString *)k Object:(id)obj;
--(id)initWithKey:(NSString *)k Object:(id)obj Children:(NSMutableDictionary *)childs;
-@end
+#import "FunctionTreeItem.h"
 
 @interface FunctionTreeViewController : NSObject <NSOutlineViewDataSource, NSOutlineViewDelegate>
 {
 	FunctionTreeItem *TreeData;
 	IBOutlet NSOutlineView *listView;
+	id selectedItem;
 }
+@property id selectedItem;
 -(void)addItem:(FunctionTreeItem *)item toPath:(NSString *)path;
 -(void)addFunctions:(NSArray *)functions;
 -(void)addFunction:(Function *)function;

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface PropertyUtility : NSObject
-
++ (NSDictionary *)classPropsFor:(Class)klass;
 @end

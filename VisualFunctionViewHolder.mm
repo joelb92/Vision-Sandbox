@@ -9,21 +9,19 @@
 #import "VisualFunctionViewHolder.h"
 
 @implementation VisualFunctionViewHolder
-
-- (id)initWithFrame:(NSRect)frame
+@synthesize viewHolder;
+static VisualFunctionViewHolder *sharedViewHolder;
+-(id)init
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
-    }
-    return self;
+	self = [super init];
+	if (self)
+	{
+		sharedViewHolder = self;
+	}
+	return self;
 }
-
-- (void)drawRect:(NSRect)dirtyRect
++ (id)sharedViewHolder
 {
-	[super drawRect:dirtyRect];
-	
-    // Drawing code here.
+    return sharedViewHolder;
 }
-
 @end

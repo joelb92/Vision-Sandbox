@@ -7,7 +7,17 @@
 //
 
 #import "Function.h"
-
+#import "Algorithm.h"
 @interface Algorithm : Function
-
+{
+	NSMutableArray *functions;
+}
+-(Function *)FunctionAtIndex:(int)index;
+-(void)addFunction:(Function *)function;
+-(void)addFunctions:(NSArray *)functionsArr;
+-(void)insertFunction:(Function *)function atIndex:(int)index;
+-(void)replaceFunctionAtIndex:(int)index withFunction:(Function *)function;
+-(void)removeFunctionAtIndex:(int)index;
+-(void)removeFunction:(Function *)func;
+-(int)count;
 @end

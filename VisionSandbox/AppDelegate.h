@@ -11,13 +11,22 @@
 #import "GLOutlineViewController.h"
 #import "GL2DView.h"
 #import "FunctionTreeViewController.h"
+#import "AlgorithmTreeViewController.h"
 #import "PluginManager.h"
 #import "Function.h"
+#import "Threshold.h"
+#import "Dilate.h"
+#import "PropertyUtility.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
 	IBOutlet GLOutlineViewController *mainGLOutlineView;
 	IBOutlet GL2DView *mainGLView;
 	IBOutlet FunctionTreeViewController *functionListController;
+	IBOutlet AlgorithmTreeViewController *AlgorithmListController;
+	IBOutlet NSOutlineView *FunctionListView;
+	IBOutlet NSOutlineView *AlgorithmListView;
+	IBOutlet NSTextField *initialInputPath;
+	OpenImageHandler *loadedImg;
 }
 @property (assign) IBOutlet NSWindow *window;
 

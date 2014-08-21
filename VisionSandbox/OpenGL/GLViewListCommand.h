@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "vector2Rect.h"
-
+#import "OpenImageHandler.h"
 typedef enum
 {
 	Before,

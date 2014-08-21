@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface CheckboxView : NSOutlineView
-
+#import "FunctionVisualTableCellView.h"
+@interface CheckboxView : FunctionVisualTableCellView
+{
+	IBOutlet NSButton *checkBox;
+}
+- (bool)state;
 @end

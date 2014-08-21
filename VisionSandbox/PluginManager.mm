@@ -81,10 +81,6 @@
 		Class classType = nil;
 		for (int i = 0; i < numClasses; i++) {
 			classType = classes[i];
-			if (classType == Threshold.class)
-			{
-				NSLog(@"good!");
-			}
 			bool isCorrectSublcass =false;
 			Class superClass = class_getSuperclass(classType);
 			while (superClass) {
@@ -95,7 +91,7 @@
 				}
 				superClass = class_getSuperclass(superClass);
 			}
-			if (isCorrectSublcass && ![classTypesToLoad containsObject:classType]) {
+			if (isCorrectSublcass && ![classTypesToLoad containsObject:classType] && classType != Algorithm.class) {
 				[array addObject:classType];
 			}
 		}

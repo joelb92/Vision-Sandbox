@@ -7,7 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface SliderView : NSOutlineView
+#import "FunctionVisualTableCellView.h"
+@interface SliderView : FunctionVisualTableCellView <NSTextFieldDelegate>
+{
+	IBOutlet NSTextField *field;
+	IBOutlet NSSlider *slider;
+	double min,max;
+}
+@property NSString *numType;
+@property double min;
+@property double max;
+- (int)intVal;
 
 @end

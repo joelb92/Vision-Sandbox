@@ -26,4 +26,24 @@
     // Drawing code here.
 }
 
+-(void)applyValue:(id)val
+{
+	if ([val isKindOfClass:NSNumber.class]) {
+		[checkBox setState:[(NSNumber *)checkBox boolValue]];
+		
+	}
+}
+
+-(IBAction)checkChanged:(id)sender
+{
+	[self settingChanged];
+}
+-(id)getValue
+{
+	return @(checkBox.state);
+}
+- (bool)state
+{
+	return checkBox.state;
+}
 @end

@@ -9,12 +9,12 @@
 #import "ComboView.h"
 
 @implementation ComboView
-
+@dynamic items;
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
+		items = @{}.mutableCopy;
     }
     return self;
 }
@@ -26,4 +26,46 @@
     // Drawing code here.
 }
 
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
+	if (self) {
+		items = @{}.mutableCopy;
+	}
+	return self;
+}
+
+-(void)applyValue:(id)val
+{
+	if ([val respondsToSelector:@selector(stringValue)]) {
+		[comboBox selectItemAtIndex:[[comboBox objectValues] indexOfObject:[val stringValue]]];
+	}
+}
+
+-(id)getValue
+{
+	return [self selectedValue];
+}
+
+-(void)setting_items:(NSMutableDictionary *)its
+{
+	[self setItems:its];
+}
+
+-(void)setItems:(NSMutableDictionary *)its
+{
+	items = its;
+	[comboBox removeAllItems];
+	[comboBox addItemsWithObjectValues:items.allKeys];
+}
+
+-(IBAction)comboChanged:(id)sender
+{
+	[self settingChanged];
+}
+
+-(id)selectedValue
+{
+	return [items objectForKey:comboBox.objectValueOfSelectedItem];
+}
 @end

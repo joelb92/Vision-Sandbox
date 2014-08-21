@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface ComboView : NSOutlineView
-
+#import "FunctionVisualTableCellView.h"
+@interface ComboView : FunctionVisualTableCellView
+{
+	IBOutlet NSComboBox *comboBox;
+	NSMutableDictionary *items;
+}
+@property NSMutableDictionary *items;
+-(id)selectedValue;
 @end

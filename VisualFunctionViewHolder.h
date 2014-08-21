@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface VisualFunctionViewHolder : NSTableCellView
-
+@interface VisualFunctionViewHolder : NSObject
+{
+	IBOutlet NSTableView *viewHolder;
+}
+@property NSTableView *viewHolder;
++ (id)sharedViewHolder;
 @end

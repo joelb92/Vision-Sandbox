@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface RadioView : NSOutlineView
+#import "FunctionVisualTableCellView.h"
+@interface RadioView : FunctionVisualTableCellView
 
 @end
