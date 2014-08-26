@@ -26,7 +26,7 @@
 }
 -(void)addFunction:(Function *)function
 {
-	[TreeData addFunction:function];
+	[self.Algorithm addFunction:function];
 	[listView reloadData];
 }
 -(void)insertFunction:(Function *)function atIndex:(int)index
