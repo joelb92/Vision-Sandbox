@@ -1123,6 +1123,25 @@ float absf(float val)
 	[lock unlock];
 	return toReturn;
 }
+
+- (OpenImageHandler *)Displayable
+{
+	cv::Mat returnable = Cv;
+	if (Cv.type() == CV_32S || Cv.type() == CV_16S) {
+		returnable = Cv/256;
+		returnable.convertTo(returnable, CV_8UC(Cv.channels()));
+	}
+	else if(Cv.type() == CV_32F || Cv.type() == CV_64F)
+	{
+		returnable = Cv*255;
+		returnable.convertTo(returnable, CV_8UC(Cv.channels()));
+	}
+	else{
+		return self;
+	}
+	return [[OpenImageHandler alloc] initWithCVMat:returnable Color:White BinaryImage:binary];
+}
+
 - (void)setCvMat:(cv::Mat)cvMat
 {
 	[lock lockForWriting];

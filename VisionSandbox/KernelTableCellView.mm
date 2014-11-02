@@ -7,7 +7,6 @@
 //
 
 #import "KernelTableCellView.h"
-
 @implementation KernelTableCellView
 
 - (id)initWithFrame:(NSRect)frame
@@ -18,7 +17,10 @@
     }
     return self;
 }
-
+-(IBAction)openEditWindow:(id)sender
+{
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"edited" object:self];
+}
 - (void)drawRect:(NSRect)dirtyRect
 {
 	[super drawRect:dirtyRect];

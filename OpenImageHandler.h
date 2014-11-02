@@ -89,6 +89,7 @@
 - (OpenImageHandler*)MultiplyBy:(OpenImageHandler*)factor;
 - (OpenImageHandler*)GausianBlurUsingKernalSize:(Vector2)kSize Sigma:(double)sigma;
 - (OpenImageHandler*)Subtract:(OpenImageHandler*)sub;
+- (OpenImageHandler *)Displayable;
 - (NSArray*)Channels;
 - (void)MakeGreyScale;
 

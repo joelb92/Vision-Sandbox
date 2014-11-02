@@ -23,7 +23,9 @@
 	
 	Algorithm *testAlgorithm = [[Algorithm alloc] init];
 	testAlgorithm.functionName = @"Test Algorithm 1";
-	[testAlgorithm addFunctions:[[PluginManager sharedManager] FunctionObjects]];
+	[testAlgorithm addFunction:[[[PluginManager sharedManager] FunctionObjects] objectAtIndex:2]];
+	[testAlgorithm addFunction:[[[PluginManager sharedManager] FunctionObjects] objectAtIndex:0]];
+//	[testAlgorithm addFunctions:];
 	[AlgorithmListController setAlgorithm:testAlgorithm];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(runCurrentAlgorithm:) name:@"Setting Changed" object:nil];
 }

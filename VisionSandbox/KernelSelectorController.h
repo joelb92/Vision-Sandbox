@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface KernelSelectorController : NSObject
-
+#import "EditableConvolutionKernel.h"
+#import "KernelTableCellView.h"
+#import "NSImage+OpenCV.h"
+@interface KernelSelectorController : NSObject <NSTableViewDataSource,NSTableViewDelegate>
+{
+	IBOutlet NSTableView *kernelListTableView;
+	IBOutlet NSWindow *window;
+	NSMutableDictionary *kernelDictonary;
+	NSMutableArray *orderedKernelKeys;
+	int newCount;
+}
 @end

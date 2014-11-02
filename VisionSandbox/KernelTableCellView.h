@@ -7,7 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+@class KernelEditorController;
+#import "KernelEditorController.h"
 @interface KernelTableCellView : NSTableCellView
-
+{
+	IBOutlet NSImageView *imgView;
+	IBOutlet NSButton *editButton;
+	IBOutlet KernelEditorController *editor;
+}
+@property NSImageView *imgView;
+@property NSButton *editButton;
 @end
