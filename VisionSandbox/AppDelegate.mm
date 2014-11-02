@@ -45,7 +45,7 @@
 - (IBAction)runCurrentAlgorithm:(id)sender {
 	NSString *runPath = initialInputPath.stringValue;
 	if (!loadedImg) {
-		loadedImg =[[OpenImageHandler alloc] initWithCVMat:cv::imread("/Users/joel/Desktop/9khibZX.jpg",0) Color:White BinaryImage:false];
+		loadedImg =[[OpenImageHandler alloc] initWithCVMat:cv::imread("/Users/joelbrogan/Desktop/g.jpg",0) Color:White BinaryImage:false];
 		[GLViewListCommand AddObject:loadedImg ToViewKeyPath:@"MainView" ForKeyPath:@"First"];
 //		[GLViewListCommand SetViewKeyPath:@"MainView" MaxImageSpaceRect:vector2Rect(Vector2(0,0), Vector2(loadedImg.size.width,loadedImg.size.height))];
 	}
