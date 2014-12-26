@@ -102,6 +102,7 @@
 		5DD4C7701999ADED0066DFE1 /* FunctionTreeItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C76F1999ADED0066DFE1 /* FunctionTreeItem.mm */; };
 		5DD4C7741999B0E40066DFE1 /* Algorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C7731999B0E40066DFE1 /* Algorithm.mm */; };
 		5DD4C7771999D2C30066DFE1 /* AlgorithmArchiverController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C7761999D2C30066DFE1 /* AlgorithmArchiverController.mm */; };
+		5DD514EE1A4D149E001EC96E /* NSData+ValueToData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD514ED1A4D149E001EC96E /* NSData+ValueToData.m */; };
 		5DE5CE1B19CBEC1C0022C42A /* KernelEditorController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DE5CE1A19CBEC1C0022C42A /* KernelEditorController.mm */; };
 		5DE5CE2219CC9FA50022C42A /* EditableConvolutionKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DE5CE2119CC9FA50022C42A /* EditableConvolutionKernel.mm */; };
 		5DE5CE2519CE82A40022C42A /* KernelTableCellView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DE5CE2419CE82A40022C42A /* KernelTableCellView.mm */; };
@@ -299,6 +300,8 @@
 		5DD4C7731999B0E40066DFE1 /* Algorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Algorithm.mm; sourceTree = "<group>"; };
 		5DD4C7751999D2C30066DFE1 /* AlgorithmArchiverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmArchiverController.h; sourceTree = "<group>"; };
 		5DD4C7761999D2C30066DFE1 /* AlgorithmArchiverController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AlgorithmArchiverController.mm; sourceTree = "<group>"; };
+		5DD514EC1A4D149E001EC96E /* NSData+ValueToData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ValueToData.h"; sourceTree = "<group>"; };
+		5DD514ED1A4D149E001EC96E /* NSData+ValueToData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ValueToData.m"; sourceTree = "<group>"; };
 		5DE5CE1719CBEA260022C42A /* KernelEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelEditorController.h; sourceTree = "<group>"; };
 		5DE5CE1A19CBEC1C0022C42A /* KernelEditorController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KernelEditorController.mm; sourceTree = "<group>"; };
 		5DE5CE2019CC9FA50022C42A /* EditableConvolutionKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditableConvolutionKernel.h; path = ../EditableConvolutionKernel.h; sourceTree = "<group>"; };
@@ -660,6 +663,8 @@
 				5D55C5831995F57700D9F78A /* Timer.mm */,
 				5D55C57B1995F29C00D9F78A /* Function.h */,
 				5D55C57C1995F29C00D9F78A /* Function.mm */,
+				5DD514EC1A4D149E001EC96E /* NSData+ValueToData.h */,
+				5DD514ED1A4D149E001EC96E /* NSData+ValueToData.m */,
 				5D55C5851995F77300D9F78A /* OpenCV */,
 			);
 			name = "Functions for Algorithms";
@@ -846,6 +851,7 @@
 				5D55C53719933FCD00D9F78A /* ReadWriteLock.mm in Sources */,
 				5D28984E1991FA890036CFD6 /* TreeListItem.mm in Sources */,
 				5D94B574199D416400E080E5 /* SliderDoubleView.mm in Sources */,
+				5DD514EE1A4D149E001EC96E /* NSData+ValueToData.m in Sources */,
 				5D28984B1991FA890036CFD6 /* GLViewList.mm in Sources */,
 				5D2898891992022E0036CFD6 /* AvVector2.mm in Sources */,
 				5D55C53419933FAD00D9F78A /* SpaceConverter.mm in Sources */,

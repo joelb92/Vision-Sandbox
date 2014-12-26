@@ -59,5 +59,30 @@
 {
 	[childrenOrderedKeys sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 }
+- (NSArray*)writableTypesForPasteboard:(NSPasteboard*)pasteboard
+{
+	return [key writableTypesForPasteboard:pasteboard];
+}
+- (id)pasteboardPropertyListForType:(NSString *)type
+{
+    return nil;
+}
+- (NSPasteboardWritingOptions)writingOptionsForType:(NSString*)type pasteboard:(NSPasteboard*)pasteboard
+{
+	return 0;
+}
++ (NSArray*)readableTypesForPasteboard:(NSPasteboard*)pasteboard
+{
+    return [NSArray arrayWithObjects:(id)kUTTypeFolder, (id)kUTTypeFileURL, nil];
+}
++ (NSPasteboardReadingOptions)readingOptionsForType:(NSString*)type pasteboard:(NSPasteboard*)pasteboard
+{
+    return NSPasteboardReadingAsString;
+}
+- (void)valueForUndefinedKey:(NSString*)key
+{
+	NSLog(@"Failed to access TreeListItem %@ for key %@",self.description,key);
+}
+
 @end
 

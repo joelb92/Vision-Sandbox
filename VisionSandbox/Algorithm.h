@@ -19,5 +19,6 @@
 -(void)replaceFunctionAtIndex:(int)index withFunction:(Function *)function;
 -(void)removeFunctionAtIndex:(int)index;
 -(void)removeFunction:(Function *)func;
+-(int)indexForFunction:(Function *)func;
 -(int)count;
 @end

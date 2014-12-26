@@ -21,8 +21,8 @@
 			runTime = 0;
 			displayStepAsLayer = [aDecoder decodeBoolForKey:@"displayStepAsLayer"];
 			hasSettingsWindow = [aDecoder decodeBoolForKey:@"hasSettingsWindow"];
-			inputType = [aDecoder decodeObjectForKey:@"inputType"];
-			outputType = [aDecoder decodeObjectForKey:@"outputType"];
+			inputType = NSClassFromString([aDecoder decodeObjectForKey:@"inputType"]);
+			outputType = NSClassFromString([aDecoder decodeObjectForKey:@"outputType"]);
 			timer = [[Timer alloc] init];
 			propertySettings = [[NSDictionary alloc] init];
 			inputType = OpenImageHandler.class;
@@ -53,8 +53,8 @@
 	[aCoder encodeObject:functionTreePath forKey:@"functionTreePath"];
 	[aCoder encodeBool:displayStepAsLayer forKey:@"displayStepAsLayer"];
 	[aCoder encodeBool:hasSettingsWindow forKey:@"hasSettingsWindow"];
-	[aCoder encodeObject:inputType forKey:@"inputType"];
-	[aCoder encodeObject:outputType forKey:@"outputType"];
+	[aCoder encodeObject:NSStringFromClass(inputType) forKey:@"inputType"];
+	[aCoder encodeObject:NSStringFromClass(outputType) forKey:@"outputType"];
 }
 -(id)copyWithZone:(NSZone *)zone
 {
@@ -166,6 +166,28 @@
 //	[cView setItems:@{@"One": [NSNumber numberWithInteger:1],@"Two":[NSNumber numberWithInteger:2]}.mutableCopy];
 //	if (cView)[parametersView addSubview:cView forKey:@"comboBox"];
 	
+}
+
+- (NSArray*)writableTypesForPasteboard:(NSPasteboard*)pasteboard
+{
+	return @[@"Function.func"];
+}
+- (id)pasteboardPropertyListForType:(NSString *)type
+{
+    return nil;
+}
+- (NSPasteboardWritingOptions)writingOptionsForType:(NSString*)type pasteboard:(NSPasteboard*)pasteboard
+{
+	return 0;
+}
++ (NSArray*)readableTypesForPasteboard:(NSPasteboard*)pasteboard
+{
+    return @[@"Function.func"];
+}
++ (NSPasteboardReadingOptions)readingOptionsForType:(NSString*)type pasteboard:(NSPasteboard*)pasteboard
+{
+//	NSPasteboardReadingAsData
+    return NSPasteboardReadingAsString;
 }
 
 

@@ -10,9 +10,11 @@
 #import "FunctionTreeItem.h"
 #import "Algorithm.h"
 #import "SingleViewCellView.h"
+#import "NSData+ValueToData.h"
 @interface AlgorithmTreeViewController : NSObject <NSOutlineViewDataSource,NSOutlineViewDelegate>
 {
 	Algorithm *TreeData;
+	Function *draggedFunction;
 	IBOutlet NSOutlineView *listView;
 }
 -(Function *)FunctionAtIndex:(int)index;

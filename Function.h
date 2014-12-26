@@ -18,7 +18,7 @@
 #import <objc/runtime.h>
 #import "OpenImageHandler.h"
 #import "GLViewListCommand.h"
-@interface Function : NSObject <NSCoding,NSCopying>
+@interface Function : NSObject <NSCoding,NSCopying,NSPasteboardWriting,NSPasteboardReading>
 {
 	FunctionVisualParametersView *parametersView;
 	NSString *functionName;

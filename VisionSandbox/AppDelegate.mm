@@ -26,7 +26,10 @@
 	[testAlgorithm addFunction:[[[PluginManager sharedManager] FunctionObjects] objectAtIndex:2]];
 	[testAlgorithm addFunction:[[[PluginManager sharedManager] FunctionObjects] objectAtIndex:0]];
 //	[testAlgorithm addFunctions:];
+	[AlgorithmListView registerForDraggedTypes: [NSArray arrayWithObjects: @"Function.func",nil]];
+	[FunctionListView registerForDraggedTypes: [NSArray arrayWithObject: @"public.text"]];
 	[AlgorithmListController setAlgorithm:testAlgorithm];
+	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(runCurrentAlgorithm:) name:@"Setting Changed" object:nil];
 }
 
@@ -45,7 +48,7 @@
 - (IBAction)runCurrentAlgorithm:(id)sender {
 	NSString *runPath = initialInputPath.stringValue;
 	if (!loadedImg) {
-		loadedImg =[[OpenImageHandler alloc] initWithCVMat:cv::imread("/Users/joelbrogan/Desktop/g.jpg",0) Color:White BinaryImage:false];
+		loadedImg =[[OpenImageHandler alloc] initWithCVMat:cv::imread("/Users/joel/Desktop/g.jpg",0) Color:White BinaryImage:false];
 		[GLViewListCommand AddObject:loadedImg ToViewKeyPath:@"MainView" ForKeyPath:@"First"];
 //		[GLViewListCommand SetViewKeyPath:@"MainView" MaxImageSpaceRect:vector2Rect(Vector2(0,0), Vector2(loadedImg.size.width,loadedImg.size.height))];
 	}

@@ -172,17 +172,22 @@
 
 //Drag and drop methods
 
+
+- (void)outlineView:(NSOutlineView*)outlineView draggingSession:(NSDraggingSession*)session willBeginAtPoint:(NSPoint)screenPoint forItems:(NSArray*)draggedItems
+{
+}
 - (id <NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView pasteboardWriterForItem:(id)item{
     // No dragging if <some condition isn't met>
     BOOL dragAllowed = [item isKindOfClass:Function.class];
     if (!dragAllowed)  {
         return nil;
     }
-    
-    NSString *identifier = [(Function *)item functionName];
+	Function *otherItem = (Function *)item;
+    NSData *itemData = [NSKeyedArchiver archivedDataWithRootObject:otherItem];
     
     NSPasteboardItem *pboardItem = [[NSPasteboardItem alloc] init];
-    [pboardItem setString:identifier forType: @"public.text"];
+	draggedFunction = item;
+    [pboardItem setData:itemData forType: @"Function.func"];
 	
     return pboardItem;
 }
@@ -192,7 +197,7 @@
     
     BOOL canDrag = index >= 0 && targetItem;
 	
-    if (canDrag) {
+    if (canDrag && [targetItem isKindOfClass:Function.class]) {
         return NSDragOperationMove;
     }else {
         return NSDragOperationNone;
@@ -203,27 +208,24 @@
 - (BOOL)outlineView:(NSOutlineView *)outlineView acceptDrop:(id < NSDraggingInfo >)info item:(id)targetItem childIndex:(NSInteger)index{
 	
     NSPasteboard *p = [info draggingPasteboard];
-    NSString *title = [p stringForType:@"public.text"];
-    NSTreeNode *sourceNode;
+    NSData *data = [p dataForType:@"Function.func"];
+	Function *item = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+	if ([targetItem isKindOfClass:Algorithm.class]) {
+		Algorithm *targetAlg = targetItem;
+		int indexOfItemDragged = [targetAlg indexForFunction:draggedFunction];
+		int newIndex = index;
+		[targetAlg removeFunctionAtIndex:indexOfItemDragged];
+		if(indexOfItemDragged < index) //
+		{
+			newIndex--;
+		}
+		[targetAlg insertFunction:item atIndex:newIndex];
+		
+		[outlineView reloadData];
+	}
     
-    for(NSTreeNode *b in [targetItem childNodes]){
-        if ([[[b representedObject] title] isEqualToString:title]){
-            sourceNode = b;
-        }
-    }
-	
-    if(!sourceNode){
-        // Not found
-        return NO;
-    }
     
-    NSUInteger indexArr[] = {0,index};
-    NSIndexPath *toIndexPATH =[NSIndexPath indexPathWithIndexes:indexArr length:2];
-	
-//	[TreeData]
-//    [self.booksController moveNode:sourceNode toIndexPath:toIndexPATH];
-    
-    return YES;
+	return YES;
 }
 
 

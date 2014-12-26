@@ -60,6 +60,10 @@
 {
 	[functions removeObject:func];
 }
+-(int)indexForFunction:(Function *)func
+{
+	return [functions indexOfObject:func];
+}
 
 -(id)runMethod:(id)input
 {

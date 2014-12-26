@@ -40,6 +40,7 @@
 }
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
+	[super encodeWithCoder:aCoder];
 	[aCoder encodeDouble:set_kernelSize forKey:@"kernelSize"];
 	[aCoder encodeDouble:set_iterations forKey:@"iterations"];
 }

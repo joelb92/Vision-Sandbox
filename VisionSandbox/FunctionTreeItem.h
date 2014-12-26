@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FunctionTreeItem : NSObject
+@interface FunctionTreeItem : NSObject <NSPasteboardReading,NSPasteboardWriting>
 {
 	NSString *key;
 	NSMutableDictionary *children;
