@@ -324,6 +324,7 @@
 		command.viewKeyPath = [self FormattedKeyPathForKeyPath:command.viewKeyPath];
 		
 		[lock lockForWriting];
+	
 		TreeListItem*viewListItem = [Objects valueForKey:command.viewKeyPath];
 		if(viewListItem)
 		{

@@ -15,6 +15,7 @@
 {
 	Algorithm *TreeData;
 	Function *draggedFunction;
+	bool internalDrag;
 	IBOutlet NSOutlineView *listView;
 }
 -(Function *)FunctionAtIndex:(int)index;

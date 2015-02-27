@@ -157,4 +157,26 @@
 	[view.textField setStringValue:obj.key];
 	return view;
 }
+
+- (void)outlineView:(NSOutlineView*)outlineView draggingSession:(NSDraggingSession*)session willBeginAtPoint:(NSPoint)screenPoint forItems:(NSArray*)draggedItems
+{
+}
+- (id <NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView pasteboardWriterForItem:(id)item{
+    // No dragging if <some condition isn't met>
+    BOOL dragAllowed = [item isKindOfClass:FunctionTreeItem.class] && [[(FunctionTreeItem *)item object] isKindOfClass:Function.class];
+    if (!dragAllowed)  {
+        return nil;
+    }
+	Function *otherItem = [(FunctionTreeItem *)item object];
+    NSData *itemData = [NSKeyedArchiver archivedDataWithRootObject:otherItem];
+    
+    NSPasteboardItem *pboardItem = [[NSPasteboardItem alloc] init];
+    [pboardItem setData:itemData forType: @"Function.func"];
+    return pboardItem;
+}
+
+
+
+
+
 @end

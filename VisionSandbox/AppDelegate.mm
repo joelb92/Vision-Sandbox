@@ -11,7 +11,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	GLViewList*viewList = [[GLViewList alloc] initWithBackupPath:@"/Users/joel/Documents/Programming/VisionSandbox/Settings/View List Backup.vis"];
+	viewList = [[GLViewList alloc] initWithBackupPath:@"/Users/joel/Documents/Programming/VisionSandbox/Settings/View List Backup.vis"];
 	mainGLView.objectList = [[[GLObjectList alloc] initWithBackupPath:@"/Users/joel/Documents/Programming/VisionSandbox/Settings/Main View List Backup.vis"] autorelease];
 	[viewList AddObject:mainGLView ForKeyPath:@"MainView"];
 	mainGLOutlineView.viewList = viewList;
@@ -27,7 +27,7 @@
 	[testAlgorithm addFunction:[[[PluginManager sharedManager] FunctionObjects] objectAtIndex:0]];
 //	[testAlgorithm addFunctions:];
 	[AlgorithmListView registerForDraggedTypes: [NSArray arrayWithObjects: @"Function.func",nil]];
-	[FunctionListView registerForDraggedTypes: [NSArray arrayWithObject: @"public.text"]];
+	[FunctionListView registerForDraggedTypes: [NSArray arrayWithObject: @"Function.func"]];
 	[AlgorithmListController setAlgorithm:testAlgorithm];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(runCurrentAlgorithm:) name:@"Setting Changed" object:nil];
@@ -43,16 +43,19 @@
 }
 - (IBAction)removeFromAlgorithmView:(id)sender
 {
-	
+	int thing = [AlgorithmListView selectedRow];
+	[AlgorithmListController removeFunction:[AlgorithmListView selectedCell]];
 }
 - (IBAction)runCurrentAlgorithm:(id)sender {
-	NSString *runPath = initialInputPath.stringValue;
-	if (!loadedImg) {
-		loadedImg =[[OpenImageHandler alloc] initWithCVMat:cv::imread("/Users/joel/Desktop/g.jpg",0) Color:White BinaryImage:false];
-		[GLViewListCommand AddObject:loadedImg ToViewKeyPath:@"MainView" ForKeyPath:@"First"];
-//		[GLViewListCommand SetViewKeyPath:@"MainView" MaxImageSpaceRect:vector2Rect(Vector2(0,0), Vector2(loadedImg.size.width,loadedImg.size.height))];
-	}
-	[AlgorithmListController.Algorithm runMethod:loadedImg];
+	[mainGLOutlineView reloadData];
+//	NSString *runPath = initialInputPath.stringValue;
+//	[GLViewListCommand ClearView:@"MainView"];
+//	if (!loadedImg) {
+//		loadedImg =[[OpenImageHandler alloc] initWithCVMat:cv::imread("/Users/joel/Desktop/g.jpg",0) Color:White BinaryImage:false];
+//		[GLViewListCommand AddObject:loadedImg ToViewKeyPath:@"MainView" ForKeyPath:@"First"];
+////		[GLViewListCommand SetViewKeyPath:@"MainView" MaxImageSpaceRect:vector2Rect(Vector2(0,0), Vector2(loadedImg.size.width,loadedImg.size.height))];
+//	}
+//	[AlgorithmListController.Algorithm runMethod:loadedImg];
 }
 
 @end

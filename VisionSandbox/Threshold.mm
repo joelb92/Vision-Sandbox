@@ -41,6 +41,7 @@
 }
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
+	[super encodeWithCoder:aCoder];
 	[aCoder encodeDouble:set_thresh forKey:@"thresh"];
 	[aCoder encodeDouble:set_maxVal forKey:@"maxVal"];
 //	[aCoder encodeDouble:set_type forKey:@"type"];

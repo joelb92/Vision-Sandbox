@@ -178,7 +178,7 @@
 }
 - (id <NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView pasteboardWriterForItem:(id)item{
     // No dragging if <some condition isn't met>
-    BOOL dragAllowed = [item isKindOfClass:Function.class];
+    BOOL dragAllowed = [item isKindOfClass:Function.class] && ![item isEqualTo:TreeData];
     if (!dragAllowed)  {
         return nil;
     }
@@ -188,7 +188,7 @@
     NSPasteboardItem *pboardItem = [[NSPasteboardItem alloc] init];
 	draggedFunction = item;
     [pboardItem setData:itemData forType: @"Function.func"];
-	
+	internalDrag = true;
     return pboardItem;
 }
 
@@ -197,7 +197,7 @@
     
     BOOL canDrag = index >= 0 && targetItem;
 	
-    if (canDrag && [targetItem isKindOfClass:Function.class]) {
+    if (canDrag && [targetItem isKindOfClass:Algorithm.class] && ![draggedFunction isEqual:targetItem]) {
         return NSDragOperationMove;
     }else {
         return NSDragOperationNone;
@@ -214,16 +214,18 @@
 		Algorithm *targetAlg = targetItem;
 		int indexOfItemDragged = [targetAlg indexForFunction:draggedFunction];
 		int newIndex = index;
-		[targetAlg removeFunctionAtIndex:indexOfItemDragged];
-		if(indexOfItemDragged < index) //
-		{
-			newIndex--;
+		if (internalDrag) {
+			[targetAlg removeFunctionAtIndex:indexOfItemDragged];
+			if(indexOfItemDragged < index) //
+			{
+				newIndex--;
+			}
 		}
-		[targetAlg insertFunction:item atIndex:newIndex];
+				[targetAlg insertFunction:item atIndex:newIndex];
 		
 		[outlineView reloadData];
 	}
-    
+    internalDrag = false;
     
 	return YES;
 }

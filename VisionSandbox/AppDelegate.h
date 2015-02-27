@@ -21,6 +21,7 @@
 {
 	IBOutlet GLOutlineViewController *mainGLOutlineView;
 	IBOutlet GL2DView *mainGLView;
+	GLViewList *viewList;
 	IBOutlet FunctionTreeViewController *functionListController;
 	IBOutlet AlgorithmTreeViewController *AlgorithmListController;
 	IBOutlet NSOutlineView *FunctionListView;

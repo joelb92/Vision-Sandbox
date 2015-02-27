@@ -16,7 +16,7 @@
 	{
 		
 		GLViewList*viewList = [[GLViewList alloc] initWithBackupPath:@"/Users/joel/Documents/Programming/VisionSandbox/Settings/View List Backup.vis"];
-		mainGLView.objectList = [[GLObjectList alloc] initWithBackupPath:@"/Users/joel/Documents/Programming/VisionSandbox/Settings/Main View List Backup.vis"];
+		mainGLView.objectList = [[GLObjectList alloc] init] ;//WithBackupPath:@"/Users/joel/Documents/Programming/VisionSandbox/Settings/Main View List Backup.vis"];
 		[viewList AddObject:mainGLView ForKeyPath:@"MainView"];
 		mainGLOutlineView.viewList = viewList;
 		[GLViewListCommand SetViewKeyPath:@"MainView" MaxImageSpaceRect:vector2Rect(0, 0, 400, 400)];
